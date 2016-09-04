@@ -16,7 +16,7 @@ namespace BaseClient
         public LoginClient()
         {
             //lg = new Logger();
-
+              
             
             lgrv = new LoginSrv.LoginSrv();
             scsrv = new SysConfigSrv.SysConfigService();
