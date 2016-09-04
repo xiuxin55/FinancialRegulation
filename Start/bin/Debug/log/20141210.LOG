@@ -1,0 +1,31 @@
+2014/12/10 19:50:42:205,[5],[]:System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 21.144.73.9:80
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 BaseClient.LoginSrv.LoginSrv.CheckUserInfo(UserInfo ui) 位置 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\BaseClient\Web References\LoginSrv\Reference.cs:行号 115
+   在 BaseClient.LoginClient.CheckUserInfo(UserInfo ui) 位置 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\BaseClient\LoginClient.cs:行号 49
+   在 MainFrame.LoginVM.CheckLogin() 位置 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 142
+   在 MainFrame.LoginVM.Confirm() 位置 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 223
+2014/12/10 19:52:33:493,[5],[]:System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 21.144.73.9:80
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 BaseClient.LoginSrv.LoginSrv.CheckUserInfo(UserInfo ui) 位置 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\BaseClient\Web References\LoginSrv\Reference.cs:行号 115
+   在 BaseClient.LoginClient.CheckUserInfo(UserInfo ui) 位置 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\BaseClient\LoginClient.cs:行号 49
+   在 MainFrame.LoginVM.CheckLogin() 位置 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 142
+   在 MainFrame.LoginVM.Confirm() 位置 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 223
+2014/12/10 19:54:41:877,[5],[]:System.UriFormatException: 无效的 URI: 未能确定 URI 的格式。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.Web.Services.Protocols.WebClientProtocol.set_Url(String value)
+   在 Common.CommonFunction.SetBaseWebReference(SoapHttpClientProtocol objservice) 位置 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\Common\CommonFunction.cs:行号 516
+   在 BaseClient.LoginClient..ctor() 位置 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\BaseClient\LoginClient.cs:行号 24
+   在 BaseClient.LoginClient.get_Current() 位置 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\BaseClient\LoginClient.cs:行号 37
+   在 MainFrame.LoginVM.CheckLogin() 位置 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 142
+   在 MainFrame.LoginVM.Confirm() 位置 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 223

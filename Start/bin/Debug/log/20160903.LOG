@@ -1,0 +1,12 @@
+2016/09/03 11:35:53:696,[5],[]:System.Windows.Markup.XamlParseException: “在“System.Windows.StaticResourceExtension”上提供值时引发了异常。”，行号为“15”，行位置为“9”。 ---> System.Exception: 无法找到名为“MaterialDesignFont”的资源。资源名称区分大小写。
+   在 System.Windows.StaticResourceExtension.ProvideValueInternal(IServiceProvider serviceProvider, Boolean allowDeferredReference)
+   在 System.Windows.StaticResourceExtension.ProvideValue(IServiceProvider serviceProvider)
+   在 MS.Internal.Xaml.Runtime.ClrObjectRuntime.CallProvideValue(MarkupExtension me, IServiceProvider serviceProvider)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   在 System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   在 System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   在 System.Windows.Application.LoadComponent(Object component, Uri resourceLocator)
+   在 MainFrame.MainWindow.InitializeComponent() 位置 c:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MainFrame\MainWindow.xaml:行号 1
+   在 MainFrame.MainWindow..ctor() 位置 c:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MainFrame\MainWindow.xaml.cs:行号 36
+   在 MainFrame.LoginVM.Confirm() 位置 c:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 229

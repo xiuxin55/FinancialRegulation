@@ -1,0 +1,45 @@
+﻿<local:BaseWindow x:Class="FinancialRegulation.Page.AccrualManage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:local="clr-namespace:FinancialRegulation"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                  xmlns:tool="clr-namespace:FinancialRegulation.Tools"
+             mc:Ignorable="d"
+                  x:Name="FundInfoManageWindow"
+             d:DesignHeight="600" d:DesignWidth="600" Title="监管账户结息">
+    <local:BaseWindow.Resources>
+        <ResourceDictionary Source="/FinancialRegulation;component/Template/UC_Style.xaml"></ResourceDictionary>
+    </local:BaseWindow.Resources>
+    <Grid Name="MainLayout" Style="{StaticResource GridLayout}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.Resources>
+            <tool:FundRedChongConvert x:Key="FRCConvert"/>
+            <tool:ZJXZConverter x:Key="ZJXZConverter"/>
+            <tool:JGYHConverter x:Key="JGYHConverter"/>
+        </Grid.Resources>
+        <Label Content="监管账户结息"  Style="{StaticResource LabelTitle}" />
+        <ToolBar Style="{StaticResource ToolBarStyle}" Grid.Row="1">
+            <TextBlock Width="auto" Margin="4,3,5,0" Foreground="#FF3F4972" >结息金额</TextBlock>
+            <TextBox Width="120" Text="{Binding Path=AccrualMoney}" KeyDown="TextBoxNUMPeriod_KeyDown"></TextBox>
+            <TextBlock Width="auto" Margin="4,3,5,0" Foreground="#FF3F4972" >账户余额</TextBlock>
+            <TextBox Width="120" Text="{Binding Path=Balance}" KeyDown="TextBoxNUMPeriod_KeyDown"></TextBox>
+            <Button Content="结息" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" Command="{Binding AddCommand}" />
+            <!--TODO:扣款信息补录隐藏  以后就不准备用了 等确定不用的时候删掉-->
+            <Button Content="刷新" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" Command="{Binding FlushCommand}" />
+        </ToolBar>
+        <DataGrid  Name="dataGrid1" ItemsSource="{Binding Path=Models}" SelectedItem="{Binding CurModel}" Style="{StaticResource DataGridStyle}" Grid.Row="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="结息金额" Width="*" Binding="{Binding Path=_DE_ckje}" IsReadOnly="True" />
+                <DataGridTextColumn Header="结息日期" Width="*" Binding="{Binding Path=_DE_ckrq, StringFormat=yyyy年MM月dd日hh时mm分}" IsReadOnly="True" />
+                <DataGridTextColumn Header="操作人" Width="*" Binding="{Binding _DE_Person}" IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</local:BaseWindow>

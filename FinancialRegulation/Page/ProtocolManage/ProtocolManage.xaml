@@ -1,0 +1,87 @@
+﻿<local:BaseWindow x:Class="FinancialRegulation.Page.ProtocolManage.ProtocolManage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:FinancialRegulation"
+        xmlns:localVM ="clr-namespace:FinancialRegulation.Page.ProtocolManage"
+        Title="协议管理" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="600" Width="1000">
+    <local:BaseWindow.Resources>
+        <ResourceDictionary Source="/FinancialRegulation;component/Template/UC_Style.xaml"></ResourceDictionary>
+    </local:BaseWindow.Resources>
+    <Grid x:Name="GdMain" Style="{StaticResource GridLayout}">
+        <Grid.DataContext>
+            <localVM:ProtocolManageVM/>
+        </Grid.DataContext>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+        <Label Grid.ColumnSpan="6" Content="协议管理" Style="{StaticResource LabelTitle}"/>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200*" />
+                <ColumnDefinition Width="250*" />
+                <ColumnDefinition Width="250*" />
+                <ColumnDefinition Width="100*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <DockPanel VerticalAlignment="Center">
+                <Label Content="协议编号"/>
+                <TextBox Text="{Binding CurrentProtocolNo}"/>
+            </DockPanel>
+            <DockPanel VerticalAlignment="Center" Grid.Column="1">
+                <Label Content="开发企业"/>
+                <TextBox Text="{Binding CurrentCorp}"/>
+            </DockPanel>
+            <DockPanel VerticalAlignment="Center" Grid.Column="2">
+                <Label Content="项目名称"/>
+                <TextBox Text="{Binding CurrentItem}"/>
+            </DockPanel>
+            <Button Grid.Column="3" Height="25" Content="查询" Command="{Binding SearchCommand}"  Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" />
+        </Grid>
+        <!--<Grid Grid.Column="1" Grid.Row="2">-->
+
+        <DataGrid Grid.Column="1" Grid.Row="2" SelectedItem="{Binding CurrentProtocl}" ItemsSource="{Binding ProtocolLst}" Style="{StaticResource DataGridStyle}" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="协议编号" Binding ="{Binding SP_XYBH}" Width="120"/>
+                    <DataGridTextColumn Header="公司名称" Binding ="{Binding SP_CorpName}" Width="200"/>
+                    <DataGridTextColumn Header="项目名称" Binding ="{Binding SP_ItemName}" Width="300"/>
+                    <DataGridTextColumn Header="开发公司账号" Binding ="{Binding SP_QYZH}" Width="120"/>
+                    <DataGridTemplateColumn Header="操作">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Margin="10,0" Content="存款明细" Command="{Binding Path=DataContext.ResponseDepositPageCommand,RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="操作">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                            <Button Margin="10,0" Content="支付明细" Command="{Binding Path=DataContext.ResponsePaymentPageCommand,RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"></Button>
+                        </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!--<ListView SelectedItem="{Binding CurrentProtocl}" ItemsSource="{Binding ProtocolLst}" Margin="-1,-8,1,8">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="协议编号" DisplayMemberBinding ="{Binding SP_XYBH}" Width="120"/>
+                        <GridViewColumn Header="公司名称" DisplayMemberBinding ="{Binding SP_CorpName}" Width="200"/>
+                        <GridViewColumn Header="项目名称" DisplayMemberBinding ="{Binding SP_ItemName}" Width="300"/>
+                        <GridViewColumn Header="开发公司账号" DisplayMemberBinding ="{Binding SP_QYZH}" Width="120"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>-->
+        <!--</Grid>-->
+    </Grid>
+</local:BaseWindow>

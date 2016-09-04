@@ -1,0 +1,109 @@
+2014/09/12 09:21:25:947,[5],[]:System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: INSERT 语句中列的数目大于 VALUES 子句中指定的值的数目。VALUES 子句中值的数目必须与 INSERT 语句中指定的列的数目匹配。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteInsert(ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.Insert(String statementName, Object parameterObject)
+   在 Dao.BasesDAO`1.i(String Key, Object t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\BasesDAO.cs:行号 75
+   在 Dao.BasesDAO`1.i(T t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\BasesDAO.cs:行号 104
+   在 Dao.JG_DepositDao.Add(DepositFund t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\JG_DepositDao.cs:行号 43
+   在 FinancialRegulationSRV.JG_DepositService.Add(DepositFund o) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulationSRV\JG_DepositService.asmx.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 FundsRegulatoryClient.JG_DepositSrv.JG_DepositService.Add(DepositFund o) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FundsRegulatoryClient\Web References\JG_DepositSrv\Reference.cs:行号 119
+   在 FundsRegulatoryClient.JG_DepositClient.Add(DepositFund m) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FundsRegulatoryClient\JG_DepositClient.cs:行号 39
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 157
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72
+2014/09/12 09:26:37:344,[5],[]:System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 不能将值 NULL 插入列 'DE_DepositNum'，表 'FinancialRegulation.dbo.JG_Deposit'；列不允许有空值。INSERT 失败。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteInsert(ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.Insert(String statementName, Object parameterObject)
+   在 Dao.BasesDAO`1.i(String Key, Object t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\BasesDAO.cs:行号 75
+   在 Dao.BasesDAO`1.i(T t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\BasesDAO.cs:行号 104
+   在 Dao.JG_DepositDao.Add(DepositFund t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\JG_DepositDao.cs:行号 43
+   在 FinancialRegulationSRV.JG_DepositService.Add(DepositFund o) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulationSRV\JG_DepositService.asmx.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 FundsRegulatoryClient.JG_DepositSrv.JG_DepositService.Add(DepositFund o) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FundsRegulatoryClient\Web References\JG_DepositSrv\Reference.cs:行号 119
+   在 FundsRegulatoryClient.JG_DepositClient.Add(DepositFund m) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FundsRegulatoryClient\JG_DepositClient.cs:行号 39
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 157
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72
+2014/09/12 09:51:28:230,[5],[]:System.Exception: 所提供的服务器连接超时
+   在 Message.MessageSender.SendMessage(BaseRequest bmr) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\Message\MessageSender.cs:行号 69
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoEditVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoEditVM.cs:行号 128
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72
+2014/09/12 09:56:40:446,[5],[]:System.Exception: 所提供的服务器连接超时
+   在 Message.MessageSender.SendMessage(BaseRequest bmr) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\Message\MessageSender.cs:行号 69
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoEditVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoEditVM.cs:行号 128
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72
+2014/09/12 09:59:29:047,[5],[]:System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 违反了 PRIMARY KEY 约束 'PK_JG_Deposit_1'。不能在对象 'dbo.JG_Deposit' 中插入重复键。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteInsert(ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.Insert(String statementName, Object parameterObject)
+   在 Dao.BasesDAO`1.i(String Key, Object t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\BasesDAO.cs:行号 75
+   在 Dao.BasesDAO`1.i(T t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\BasesDAO.cs:行号 104
+   在 Dao.JG_DepositDao.Add(DepositFund t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\JG_DepositDao.cs:行号 43
+   在 FinancialRegulationSRV.JG_DepositService.Add(DepositFund o) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulationSRV\JG_DepositService.asmx.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 FundsRegulatoryClient.JG_DepositSrv.JG_DepositService.Add(DepositFund o) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FundsRegulatoryClient\Web References\JG_DepositSrv\Reference.cs:行号 119
+   在 FundsRegulatoryClient.JG_DepositClient.Add(DepositFund m) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FundsRegulatoryClient\JG_DepositClient.cs:行号 39
+   在 FinancialRegulation.ViewModel.FundInfoEditVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoEditVM.cs:行号 154
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72
+2014/09/12 10:03:05:557,[5],[]:System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 违反了 PRIMARY KEY 约束 'PK_JG_Deposit_1'。不能在对象 'dbo.JG_Deposit' 中插入重复键。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteInsert(ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.Insert(String statementName, Object parameterObject)
+   在 Dao.BasesDAO`1.i(String Key, Object t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\BasesDAO.cs:行号 75
+   在 Dao.BasesDAO`1.i(T t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\BasesDAO.cs:行号 104
+   在 Dao.JG_DepositDao.Add(DepositFund t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\JG_DepositDao.cs:行号 43
+   在 FinancialRegulationSRV.JG_DepositService.Add(DepositFund o) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulationSRV\JG_DepositService.asmx.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 FundsRegulatoryClient.JG_DepositSrv.JG_DepositService.Add(DepositFund o) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FundsRegulatoryClient\Web References\JG_DepositSrv\Reference.cs:行号 119
+   在 FundsRegulatoryClient.JG_DepositClient.Add(DepositFund m) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FundsRegulatoryClient\JG_DepositClient.cs:行号 39
+   在 FinancialRegulation.ViewModel.FundInfoEditVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoEditVM.cs:行号 154
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72

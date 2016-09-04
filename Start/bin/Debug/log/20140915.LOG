@@ -1,0 +1,29 @@
+2014/09/15 17:19:32:187,[5],[]:System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 'ODER' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteReader()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.RunQueryForList[T](RequestScope request, ISqlMapSession session, Object parameterObject, IList`1 resultObject, RowDelegate`1 rowDelegate)
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteQueryForList[T](ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.QueryForList[T](String statementName, Object parameterObject)
+   在 Dao.BasesDAO`1.ss(String Key) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\BasesDAO.cs:行号 97
+   在 Dao.BasesDAO`1.ss() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\BasesDAO.cs:行号 120
+   在 Dao.JG_InterestRateDao.Selects() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\JG_InterestRateDao.cs:行号 61
+   在 FinancialRegulationSRV.JG_InterestRateSrv.SelectJG_InterestRateInfo() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulationSRV\JG_InterestRateSrv.asmx.cs:行号 24
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 FundsRegulatoryClient.JG_InterestRateSrv.JG_InterestRateSrv.SelectJG_InterestRateInfo() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FundsRegulatoryClient\Web References\JG_InterestRateSrv\Reference.cs:行号 93
+   在 FundsRegulatoryClient.JG_InterestRateClient.Selects() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FundsRegulatoryClient\JG_InterestRateClient.cs:行号 34
+   在 FinancialRegulation.ViewModel.OpenAccountEditVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Account&Point\OpenAccountEditVM.cs:行号 82
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72

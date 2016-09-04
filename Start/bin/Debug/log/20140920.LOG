@@ -1,0 +1,9 @@
+2014/09/20 14:11:53:154,[5],[]:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 163
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72
+2014/09/20 14:12:02:037,[5],[]:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 163
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72
+2014/09/20 14:14:22:696,[5],[]:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 163
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72

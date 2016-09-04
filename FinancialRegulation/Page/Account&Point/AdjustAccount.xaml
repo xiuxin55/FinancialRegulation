@@ -1,0 +1,41 @@
+<local:BaseWindow x:Class="FinancialRegulation.Page.AdjustAccount"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:local="clr-namespace:FinancialRegulation"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="600" d:DesignWidth="600" Tag="" Title="调账管理">
+    <local:BaseWindow.Resources>
+        <ResourceDictionary Source="/FinancialRegulation;component/Template/UC_Style.xaml"></ResourceDictionary>
+    </local:BaseWindow.Resources>
+    <Grid Name="MainLayout" Style="{StaticResource GridLayout}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Label Content="调账管理"  Style="{StaticResource LabelTitle}" />
+        <ToolBar Style="{StaticResource ToolBarStyle}" Grid.Row="1">
+            <Button Content="调账" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" Command="{Binding AddCommand}" />
+            <ComboBox Width="120"  Background="#FFD7E3F2" Margin="10,0,0,0" Foreground="#FF5A4F72" BorderBrush="#FFB1B1B1" Text="{Binding State}">
+                <ComboBox.Items>
+                    <ComboBoxItem Content="未调账" IsSelected="True" BorderThickness="0" IsHitTestVisible="True" />
+                    <ComboBoxItem Content="已调账" />
+                    <ComboBoxItem Content="全部" />
+                </ComboBox.Items>
+            </ComboBox>
+            <Button Content="查询" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" Command="{Binding SearchCommand}" />
+        </ToolBar>
+        <DataGrid Grid.Row="2" Name="dataGrid1" ItemsSource="{Binding Path=Models}"  SelectedItem="{Binding CurModel}" Style="{StaticResource DataGridStyle}" ForceCursor="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="合同编号" Width="*" Binding="{Binding htbah}" IsReadOnly="True" />
+                <DataGridTextColumn Header="调账金额" Width="*" Binding="{Binding fkje}" IsReadOnly="True" />
+                <DataGridTextColumn Header="调账人" Width="*" Binding="{Binding ckr}" IsReadOnly="True" />
+                <DataGridTextColumn Header="调入账户" Width="*" Binding="{Binding tkzh}" IsReadOnly="True" />
+                <DataGridTextColumn Header="调出账户" Width="*" Binding="{Binding fkzh}" IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</local:BaseWindow>

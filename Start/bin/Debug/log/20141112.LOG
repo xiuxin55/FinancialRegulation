@@ -1,0 +1,87 @@
+2014/11/12 15:24:18:175,[5],[]:System.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\MessageSender.cs:行号 53
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207
+2014/11/12 15:41:09:061,[5],[]:System.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\MessageSender.cs:行号 53
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207
+2014/11/12 15:56:46:641,[5],[]:System.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\MessageSender.cs:行号 53
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207
+2014/11/12 16:04:53:549,[5],[]:System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Decimal.Parse(String s)
+   在 Message.NewMessage.Response.Response02.SetValue() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\NewMessage\Response\Response02.cs:行号 181
+   在 Message.NewMessage.Response.Response02..ctor(String MessageInfo) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\NewMessage\Response\Response02.cs:行号 81
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\MessageSender.cs:行号 61
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207
+2014/11/12 16:10:56:724,[5],[]:System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Decimal.Parse(String s)
+   在 Message.NewMessage.Response.Response02.SetValue() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\NewMessage\Response\Response02.cs:行号 181
+   在 Message.NewMessage.Response.Response02..ctor(String MessageInfo) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\NewMessage\Response\Response02.cs:行号 81
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\MessageSender.cs:行号 61
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207
+2014/11/12 16:13:50:872,[5],[]:System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Decimal.Parse(String s)
+   在 Message.NewMessage.Response.Response02.SetValue() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\NewMessage\Response\Response02.cs:行号 181
+   在 Message.NewMessage.Response.Response02..ctor(String MessageInfo) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\NewMessage\Response\Response02.cs:行号 81
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\MessageSender.cs:行号 61
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207
+2014/11/12 16:16:08:457,[5],[]:System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Decimal.Parse(String s)
+   在 Message.NewMessage.Response.Response02.SetValue() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\NewMessage\Response\Response02.cs:行号 181
+   在 Message.NewMessage.Response.Response02..ctor(String MessageInfo) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\NewMessage\Response\Response02.cs:行号 81
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\MessageSender.cs:行号 61
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207
+2014/11/12 17:30:04:892,[5],[]:System.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\MessageSender.cs:行号 53
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207
+2014/11/12 17:50:42:323,[5],[]:System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Decimal.Parse(String s)
+   在 Message.NewMessage.Response.Response02.SetValue() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\NewMessage\Response\Response02.cs:行号 181
+   在 Message.NewMessage.Response.Response02..ctor(String MessageInfo) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\NewMessage\Response\Response02.cs:行号 81
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\MessageSender.cs:行号 61
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207
+2014/11/12 17:51:25:091,[5],[]:System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Decimal.Parse(String s)
+   在 Message.NewMessage.Response.Response02.SetValue() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\NewMessage\Response\Response02.cs:行号 181
+   在 Message.NewMessage.Response.Response02..ctor(String MessageInfo) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\NewMessage\Response\Response02.cs:行号 81
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\MessageSender.cs:行号 61
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207
+2014/11/12 17:52:26:421,[5],[]:System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Decimal.Parse(String s)
+   在 Message.NewMessage.Response.Response02.SetValue() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\NewMessage\Response\Response02.cs:行号 181
+   在 Message.NewMessage.Response.Response02..ctor(String MessageInfo) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\NewMessage\Response\Response02.cs:行号 81
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\Message\MessageSender.cs:行号 61
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 E:\project\连云港项目\邮储银行端\源代码\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207

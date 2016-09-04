@@ -1,0 +1,146 @@
+2016/06/05 14:44:20:243,[5],[]:System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> IBatisNet.DataMapper.Exceptions.DataMapperException: Unable to open connection to "Microsoft SQL Server 2005, provider V2.0.50215.0 in framework .NET V2.0". ---> System.InvalidOperationException: 超时时间已到。超时时间已到，但是尚未从池中获取连接。出现这种情况可能是因为所有池连接均在使用，并且达到了最大池大小。
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 IBatisNet.DataMapper.SqlMapSession.OpenConnection(String connectionString)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.SqlMapSession.OpenConnection(String connectionString)
+   在 IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteReader()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.RunQueryForList[T](RequestScope request, ISqlMapSession session, Object parameterObject, IList`1 resultObject, RowDelegate`1 rowDelegate)
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteQueryForList[T](ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.QueryForList[T](String statementName, Object parameterObject)
+   在 Dao.LoginDao.CheckUserInfo(UserInfo ui) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\DAO\LoginDao.cs:行号 19
+   在 FinancialRegulationSRV.LoginSrv.CheckUserInfo(UserInfo ui) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulationSRV\LoginSrv.asmx.cs:行号 35
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 BaseClient.LoginSrv.LoginSrv.CheckUserInfo(UserInfo ui) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\Web References\LoginSrv\Reference.cs:行号 115
+   在 BaseClient.LoginClient.CheckUserInfo(UserInfo ui) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\LoginClient.cs:行号 49
+   在 MainFrame.LoginVM.CheckLogin() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 142
+   在 MainFrame.LoginVM.Confirm() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 223
+2016/06/05 14:51:05:601,[5],[]:System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 列名 'MainWebSite' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteReader()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.RunQueryForList[T](RequestScope request, ISqlMapSession session, Object parameterObject, IList`1 resultObject, RowDelegate`1 rowDelegate)
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteQueryForList[T](ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.QueryForList[T](String statementName, Object parameterObject)
+   在 Dao.BasesDAO`1.ss(String Key) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\DAO\BasesDAO.cs:行号 97
+   在 Dao.BasesDAO`1.ss() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\DAO\BasesDAO.cs:行号 120
+   在 Dao.SysConfigDao.Selects() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\DAO\SysConfigDao.cs:行号 51
+   在 FinancialRegulationSRV.SysConfigService.Selects() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulationSRV\SysConfigService.asmx.cs:行号 35
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 BaseClient.SysConfigSrv.SysConfigService.Selects() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\Web References\SysConfigSrv\Reference.cs:行号 112
+   在 BaseClient.LoginClient.CheckUserInfo(UserInfo ui) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\LoginClient.cs:行号 57
+   在 MainFrame.LoginVM.CheckLogin() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 142
+   在 MainFrame.LoginVM.Confirm() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 223
+2016/06/05 14:51:51:397,[5],[]:System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 列名 'MainWebSite' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteReader()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.RunQueryForList[T](RequestScope request, ISqlMapSession session, Object parameterObject, IList`1 resultObject, RowDelegate`1 rowDelegate)
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteQueryForList[T](ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.QueryForList[T](String statementName, Object parameterObject)
+   在 Dao.BasesDAO`1.ss(String Key) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\DAO\BasesDAO.cs:行号 97
+   在 Dao.BasesDAO`1.ss() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\DAO\BasesDAO.cs:行号 120
+   在 Dao.SysConfigDao.Selects() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\DAO\SysConfigDao.cs:行号 51
+   在 FinancialRegulationSRV.SysConfigService.Selects() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulationSRV\SysConfigService.asmx.cs:行号 35
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 BaseClient.SysConfigSrv.SysConfigService.Selects() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\Web References\SysConfigSrv\Reference.cs:行号 112
+   在 BaseClient.LoginClient.CheckUserInfo(UserInfo ui) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\LoginClient.cs:行号 57
+   在 MainFrame.LoginVM.CheckLogin() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 142
+   在 MainFrame.LoginVM.Confirm() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 223
+2016/06/05 14:54:14:377,[5],[]:System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 列名 'MainWebSite' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteReader()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.RunQueryForList[T](RequestScope request, ISqlMapSession session, Object parameterObject, IList`1 resultObject, RowDelegate`1 rowDelegate)
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteQueryForList[T](ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.QueryForList[T](String statementName, Object parameterObject)
+   在 Dao.BasesDAO`1.ss(String Key) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\DAO\BasesDAO.cs:行号 97
+   在 Dao.BasesDAO`1.ss() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\DAO\BasesDAO.cs:行号 120
+   在 Dao.SysConfigDao.Selects() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\DAO\SysConfigDao.cs:行号 51
+   在 FinancialRegulationSRV.SysConfigService.Selects() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulationSRV\SysConfigService.asmx.cs:行号 35
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 BaseClient.SysConfigSrv.SysConfigService.Selects() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\Web References\SysConfigSrv\Reference.cs:行号 112
+   在 BaseClient.LoginClient.CheckUserInfo(UserInfo ui) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\LoginClient.cs:行号 57
+   在 MainFrame.LoginVM.CheckLogin() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 142
+   在 MainFrame.LoginVM.Confirm() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MainFrame\LoginVM.cs:行号 223
+2016/06/05 14:56:30:909,[5],[]:System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.Data.SqlClient.SqlException: 列名 'SI_State' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteInsert(ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.Insert(String statementName, Object parameterObject)
+   在 Dao.BasesDAO`1.i(String Key, Object t) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\DAO\BasesDAO.cs:行号 76
+   在 Dao.BasesDAO`1.i(T t) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\DAO\BasesDAO.cs:行号 104
+   在 Dao.SeasonInterestDao.Add(SeasonInterest t) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\DAO\InterestDao.cs:行号 39
+   在 FinancialRegulationSRV.SqlTrans.CreateAccountSIDB(JG_AccountManageInfo acc, SeasonInterest si, DayBalance db, Int32 i) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulationSRV\SqlTrans.asmx.cs:行号 135
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 FundsRegulatoryClient.SqlTransSvr.SqlTrans.CreateAccountSIDB(JG_AccountManageInfo acc, SeasonInterest si, DayBalance db, Int32 i) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FundsRegulatoryClient\Web References\SqlTransSvr\Reference.cs:行号 306
+   在 FundsRegulatoryClient.SqlTransClient.CreateAccountSIDB(JG_AccountManageInfo acc, SeasonInterest si, DayBalance db, Int32 i) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FundsRegulatoryClient\SqlTransClient.cs:行号 91
+   在 FinancialRegulation.ViewModel.OpenAccountEditVM.OKExecute() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulation\Page\Account&Point\OpenAccountEditVM.cs:行号 135
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72
+2016/06/05 15:02:47:236,[5],[]:System.Net.Sockets.SocketException (0x80004005): 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer)
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\MessageSender.cs:行号 52
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207
+2016/06/05 15:02:53:721,[5],[]:System.Net.Sockets.SocketException (0x80004005): 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer)
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\MessageSender.cs:行号 52
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207
+2016/06/05 15:02:58:063,[5],[]:System.Net.Sockets.SocketException (0x80004005): 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer)
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\MessageSender.cs:行号 52
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207
+2016/06/05 15:03:02:761,[5],[]:System.Net.Sockets.SocketException (0x80004005): 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer)
+   在 Message.MessageSender.SendMessage(BaseRequest bmr, String WebsiteCode, String TellerCode) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\MessageSender.cs:行号 52
+   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseRequest request, String WebsiteCode, String TellerCode) 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
+   在 FinancialRegulation.ViewModel.FundInfoCheckVM.SearchExecute() 位置 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FinancialRegulation\Page\Fund\FundInfoCheckVM.cs:行号 207

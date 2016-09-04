@@ -1,0 +1,9 @@
+2014/09/04 17:41:00:745,[5],[]:System.Net.WebException: 请求因 HTTP 状态 404 失败: Not Found。
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 BaseClient.LoginSrv.LoginSrv.CheckUserInfo(UserInfo ui) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\BaseClient\Web References\LoginSrv\Reference.cs:行号 115
+   在 BaseClient.LoginClient.CheckUserInfo(UserInfo ui) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\BaseClient\LoginClient.cs:行号 49
+   在 MainFrame.LoginVM.CheckLogin() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\MainFrame\LoginVM.cs:行号 142
+   在 MainFrame.LoginVM.Confirm() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\MainFrame\LoginVM.cs:行号 223
+2014/09/04 17:43:41:946,[5],[]:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 MainFrame.LoginVM.Confirm() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\MainFrame\LoginVM.cs:行号 225

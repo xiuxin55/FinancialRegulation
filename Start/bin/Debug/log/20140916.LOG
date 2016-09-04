@@ -1,0 +1,21 @@
+2014/09/16 16:54:37:177,[5],[]:System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 FinancialRegulation.ViewModel.PayInfoAddToEditVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Pay\PayInfoAddToEditVM.cs:行号 198
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72
+2014/09/16 17:15:22:626,[5],[]:System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 FinancialRegulation.ViewModel.PayInfoAddToEditVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Pay\PayInfoAddToEditVM.cs:行号 205
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72
+2014/09/16 17:41:20:045,[5],[]:System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 FinancialRegulation.ViewModel.PayInfoAddToEditVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Pay\PayInfoAddToEditVM.cs:行号 205
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72

@@ -1,0 +1,25 @@
+﻿<ad:DockableContent x:Class="MainFrame.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ad="clr-namespace:AvalonDock;assembly=AvalonDock"
+        Title="菜单栏" Loaded="DockableContent_Loaded" Height="372" Width="200" FontSize="16" FontFamily="Microsoft YaHei">
+    <ad:DockableContent.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <HierarchicalDataTemplate x:Key="MenuTreeViewItemTemplate" ItemsSource="{Binding Children}">
+                <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
+                    <!--<CheckBox Focusable="False" IsChecked="{Binding IsChecked,Mode=TwoWay}" VerticalAlignment="Center" />-->
+                    <ContentPresenter Content="{Binding Name,Mode=OneWay}" Margin="2,0" />
+                </StackPanel>
+            </HierarchicalDataTemplate>
+        </ResourceDictionary>
+        
+    </ad:DockableContent.Resources>
+    <Grid>
+        <TreeView x:Name="menuTree"  Style="{StaticResource VirtualisedMetroTreeView}"  ItemTemplate="{StaticResource MenuTreeViewItemTemplate}" MouseDoubleClick="menuTree_MouseDoubleClick"  SelectedItemChanged="menuTree_SelectedItemChanged">
+            
+        </TreeView>
+    </Grid>
+</ad:DockableContent>

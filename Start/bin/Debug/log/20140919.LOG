@@ -1,0 +1,29 @@
+2014/09/19 10:24:17:210,[5],[]:System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 FinancialRegulation.ViewModel.Fund.ReverseTradeVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Fund\ReverseTradeVM.cs:行号 134
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72
+2014/09/19 15:43:36:387,[5],[]:System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> IBatisNet.Common.Exceptions.ProbeException: There is no Get member named 'PA_FirmName' in class 'FundPayment'
+   在 IBatisNet.Common.Utilities.Objects.ObjectProbe.GetMember(Object obj, String memberName, AccessorFactory accessorFactory)
+   在 IBatisNet.Common.Utilities.Objects.ObjectProbe.GetMemberValue(Object obj, String memberName, AccessorFactory accessorFactory)
+   在 IBatisNet.DataMapper.Configuration.Sql.Dynamic.Handlers.IsEmptyTagHandler.IsCondition(SqlTagContext ctx, SqlTag tag, Object parameterObject)
+   在 IBatisNet.DataMapper.Configuration.Sql.Dynamic.Handlers.IsNotEmptyTagHandler.IsCondition(SqlTagContext ctx, SqlTag tag, Object parameterObject)
+   在 IBatisNet.DataMapper.Configuration.Sql.Dynamic.Handlers.ConditionalTagHandler.DoStartFragment(SqlTagContext ctx, SqlTag tag, Object parameterObject)
+   在 IBatisNet.DataMapper.Configuration.Sql.Dynamic.DynamicSql.ProcessBodyChildren(RequestScope request, SqlTagContext ctx, Object parameterObject, IEnumerator localChildren, StringBuilder buffer)
+   在 IBatisNet.DataMapper.Configuration.Sql.Dynamic.DynamicSql.Process(RequestScope request, Object parameterObject)
+   在 IBatisNet.DataMapper.Configuration.Sql.Dynamic.DynamicSql.GetRequestScope(IMappedStatement mappedStatement, Object parameterObject, ISqlMapSession session)
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteUpdate(ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.Update(String statementName, Object parameterObject)
+   在 Dao.BasesDAO`1.u(String Key, Object t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\BasesDAO.cs:行号 81
+   在 Dao.BasesDAO`1.u(T t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\BasesDAO.cs:行号 106
+   在 Dao.JG_PaymentDao.Update(FundPayment t) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\DAO\JG_PaymentDao.cs:行号 52
+   在 FinancialRegulationSRV.JG_PaymentService.Update(FundPayment o) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulationSRV\JG_PaymentService.asmx.cs:行号 32
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 FundsRegulatoryClient.JG_PaymentSrv.JG_PaymentService.Update(FundPayment o) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FundsRegulatoryClient\Web References\JG_PaymentSrv\Reference.cs:行号 153
+   在 FundsRegulatoryClient.JG_PaymentClient.Update(FundPayment m) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FundsRegulatoryClient\JG_PaymentClient.cs:行号 46
+   在 FinancialRegulation.ViewModel.ReverseTradeVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Pay\ReverseTradeVM.cs:行号 117
+   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72
