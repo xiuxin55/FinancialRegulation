@@ -3,12 +3,13 @@ using System.Text.RegularExpressions;
 using System.Windows.Input;
 using FundsRegulatoryClient.JG_PaymentSrv;
 using System.Collections.ObjectModel;
+using MahApps.Metro.Controls;
 namespace FinancialRegulation.Page.Other
 {
     /// <summary>
     /// O1.xaml 的交互逻辑
     /// </summary>
-    public partial class BillCheckWindow : BaseWindow
+    public partial class BillCheckWindow : MetroWindow
     {
         private BillCheckWindowVm vm;
         public BillCheckWindow(BillCheckWindowVm vm)
@@ -18,14 +19,14 @@ namespace FinancialRegulation.Page.Other
         }
         private void Cancel_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            this.CloseWindow();
+            //this.CloseWindow();
         }
        
         private void SendBill_Click(object sender, System.Windows.RoutedEventArgs e)
         {
            vm.BillInstruction= txt_Instruction.Text;
            //vm.AccountBalance =decimal.Parse(txt_AccountBalance.Text);
-           this.OpenNewWindow();
+           //this.OpenNewWindow();
         }
 
         #region TextBox的输入限制

@@ -16,8 +16,22 @@ namespace Start
     //}
     public partial class App : Application
     {
-        public App()
+  
+        protected override void OnStartup(StartupEventArgs e)
         {
+            base.OnStartup(e);
+            //  Form frmAutoUpdate = (Form)Assembly.LoadFrom("AutoUpdate.dll").CreateInstance("AutoUpdate.FrmUpdate");
+            MainFrame.LoginWindow lw = new MainFrame.LoginWindow();
+
+            if (lw.ShowDialog() == true)
+            {
+                Window w = new MainFrame.MainWindow();
+ 
+                lw.Close();
+                w.Show();
+            }
+
+            lw = null;
         }
     }
 }

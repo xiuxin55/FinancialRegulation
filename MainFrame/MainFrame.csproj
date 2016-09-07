@@ -60,9 +60,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Utils\Encryption4Net.dll</HintPath>
     </Reference>
-    <Reference Include="MahApps.Metro">
-      <HintPath>..\Utils\MahApps.Metro.dll</HintPath>
-    </Reference>
     <Reference Include="MahApps.Metro.Resources">
       <HintPath>..\Utils\MahApps.Metro.Resources.dll</HintPath>
     </Reference>
@@ -105,6 +102,7 @@
     <Compile Include="UpdatePwdWindow.xaml.cs">
       <DependentUpon>UpdatePwdWindow.xaml</DependentUpon>
     </Compile>
+    <Resource Include="logo.png" />
     <Resource Include="BackGround.jpg" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -176,12 +174,13 @@
       <Project>{FBBDB0FA-8138-4B95-A4E0-AB88BF5CFE12}</Project>
       <Name>FinancialRegulation</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MahApps.Metro\MahApps.Metro.csproj">
+      <Project>{5b1710d2-5dc8-4754-91b2-19165de49b3d}</Project>
+      <Name>MahApps.Metro</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="01.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="dzlogo.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="001.ico" />

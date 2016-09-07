@@ -3,20 +3,21 @@ using System.Text.RegularExpressions;
 using System.Windows.Input;
 using FundsRegulatoryClient.JG_DepositSrv;
 using System.Collections.ObjectModel;
+using MahApps.Metro.Controls;
 namespace FinancialRegulation.Page.Fund
 {
     /// <summary>
     /// O1.xaml 的交互逻辑
     /// </summary>
-    public partial class ReverseTrade : BaseWindow
+    public partial class ReverseTrade : MetroWindow
     {
 
         public ReverseTrade(DepositFund df, ObservableCollection<DepositFund> models)
         {
             InitializeComponent();
             ViewModel.Fund.ReverseTradeVM vm = new ViewModel.Fund.ReverseTradeVM(df, models);
-            vm.windowClose = CloseWindow;
-            vm.windowOK = OpenNewWindow;
+            //vm.windowClose = CloseWindow;
+            //vm.windowOK = OpenNewWindow;
             this.DataContext = vm;
         }
 

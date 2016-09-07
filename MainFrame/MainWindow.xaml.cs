@@ -19,6 +19,7 @@ using System.IO;
 using FinancialRegulation;
 using lgsv=BaseClient.LoginSrv;
 using MahApps.Metro.Controls;
+using Microsoft.Practices.Prism.Commands;
 
 
 namespace MainFrame
@@ -35,8 +36,13 @@ namespace MainFrame
         public MainWindow()
         {
             InitializeComponent();
-      
 
+            CloseTabCommand = new SimpleCommand();
+            CloseTabCommand.ExecuteDelegate = CloseTabExecute;
+            CloseTabCommand.CanExecuteDelegate = (obj) =>
+            {
+                return true ;
+            };
             MenuDoubleClickAction = new Action<lgsv.MenuItem>(MenuDoubleClick);
             try
             {
@@ -48,20 +54,21 @@ namespace MainFrame
             }
         }
 
+        
 
         private void MenuDoubleClick(lgsv.MenuItem mi)
         {
             if (null == mi) return;
             if (null != mi.InvokingConfig && "" != mi.InvokingConfig)
             {
-                ShowWindow(mi.InvokingConfig);
+                ShowWindow(mi);
             }
         }
 
-        private void ShowWindow(string xmlstr)
+        private void ShowWindow(lgsv.MenuItem mi)
         {
             XmlDocument xdoc = new XmlDocument();
-            xdoc.LoadXml(xmlstr);
+            xdoc.LoadXml(mi.InvokingConfig);
             XmlNodeList xlist = xdoc.GetElementsByTagName("DSPUSERCONTROL");
             string dllPath = "";
             string dllName = "";
@@ -76,11 +83,12 @@ namespace MainFrame
                     Assembly ass = Assembly.LoadFrom(dllPath);
                     Type t = ass.GetType(xlist.Item(0).ChildNodes[1].InnerText);
 
-                    foreach (DockableContent obj in DocPane.Items)
+                    foreach (MetroTabItem obj in this.tblMainRegion.Items)
                     {
-                        if (obj.GetType()==t )
+
+                        if (obj.Content!=null&&obj.Content.GetType() == t)
                         {
-                            obj.ShowAsDocument();
+                            obj.IsSelected = true;
                             return;
                         }
                     }
@@ -104,17 +112,23 @@ namespace MainFrame
                         }
                     }
                     constructors = t.GetConstructor(ts);
-                    DockableContent f = constructors.Invoke(parms) as DockableContent;
-                    if (f is BaseWindow)
+                    MetroContentControl f = constructors.Invoke(parms) as MetroContentControl;
+                    if (f !=null)
                     {
-                        BaseWindow bw = f as BaseWindow;
-                        bw.DKM = dockingManager;
+                        MetroTabItem tabitem = new MetroTabItem();
+                        tabitem.Header = mi.Name;
+                        tabitem.Content = f;
+                        
+                        tabitem.CloseTabCommand = CloseTabCommand;
+            
+                        if (!this.tblMainRegion.Items.Contains(tabitem))
+                        {
+                            this.tblMainRegion.Items.Add(tabitem);
+                        }
+                        tabitem.IsSelected = true;
                     }
-                    if (!DocPane.Items.Contains(f.ToString()))
-                    {
-                        DocPane.Items.Add(f);
-                    }
-                    f.ShowAsDocument();
+                   
+                    
                 }
             }
             catch (FileNotFoundException fe)
@@ -126,7 +140,16 @@ namespace MainFrame
                 MessageBox.Show(ex.ToString());
             }
         }
-
+        private SimpleCommand CloseTabCommand;
+        private void CloseTabExecute(object  tabitem)
+        {
+            MetroTabItem item = tabitem as MetroTabItem;
+            if (item == null) { return; }
+            if (this.tblMainRegion.Items!=null &&this.tblMainRegion.Items.Contains(tabitem))
+            {
+                this.tblMainRegion.Items.Remove(tabitem);
+            }
+        }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             menuWindow.menuitem = ui.menuitem.ToList<lgsv.MenuItem>();
@@ -136,6 +159,30 @@ namespace MainFrame
         private void Window_Closed(object sender, EventArgs e)
         {
             Application.Current.Shutdown();
+        }
+    }
+    public class SimpleCommand : ICommand
+    {
+        public Predicate<object> CanExecuteDelegate { get; set; }
+        public Action<object> ExecuteDelegate { get; set; }
+
+        public bool CanExecute(object parameter)
+        {
+            if (CanExecuteDelegate != null)
+                return CanExecuteDelegate(parameter);
+            return true; // if there is no can execute default to true
+        }
+
+        public event EventHandler CanExecuteChanged
+        {
+            add { CommandManager.RequerySuggested += value; }
+            remove { CommandManager.RequerySuggested -= value; }
+        }
+
+        public void Execute(object parameter)
+        {
+            if (ExecuteDelegate != null)
+                ExecuteDelegate(parameter);
         }
     }
 }

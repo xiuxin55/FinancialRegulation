@@ -12,6 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
+using MahApps.Metro.Controls;
 
 
 namespace FinancialRegulation.Page
@@ -19,14 +20,14 @@ namespace FinancialRegulation.Page
     /// <summary>
     /// O1.xaml 的交互逻辑
     /// </summary>
-    public partial class InterestRateEdit : BaseWindow
+    public partial class InterestRateEdit : MetroWindow
     {
         public InterestRateEdit(FundsRegulatoryClient.JG_InterestRateSrv.JG_InterestRateInfo jirInfo)
         {
             InitializeComponent();
             Other.InterestRateEditVM vm = new Other.InterestRateEditVM();
             vm.JirInfo = jirInfo;
-            vm.windowClose = CloseWindow;
+            //vm.windowClose = CloseWindow;
             this.DataContext = vm;
         }
 

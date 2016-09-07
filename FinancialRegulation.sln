@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialRegulation", "FinancialRegulation\FinancialRegulation.csproj", "{FBBDB0FA-8138-4B95-A4E0-AB88BF5CFE12}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MODEL", "MODEL\MODEL.csproj", "{41D516E9-EF29-4CB6-8214-20771F756210}"
@@ -33,6 +35,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message", "Message\Message.csproj", "{F754D6A1-1FBF-42F5-9F70-B0291275F407}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BankSetup", "BankSetup\BankSetup.vdproj", "{020155A3-FF1B-43B6-8DB0-CF71355E7E99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahApps.Metro", "MahApps.Metro\MahApps.Metro.csproj", "{5B1710D2-5DC8-4754-91B2-19165DE49B3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -190,6 +194,16 @@ Global
 		{020155A3-FF1B-43B6-8DB0-CF71355E7E99}.Release|Any CPU.ActiveCfg = Release
 		{020155A3-FF1B-43B6-8DB0-CF71355E7E99}.Release|Mixed Platforms.ActiveCfg = Release
 		{020155A3-FF1B-43B6-8DB0-CF71355E7E99}.Release|x86.ActiveCfg = Release
+		{5B1710D2-5DC8-4754-91B2-19165DE49B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1710D2-5DC8-4754-91B2-19165DE49B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1710D2-5DC8-4754-91B2-19165DE49B3D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5B1710D2-5DC8-4754-91B2-19165DE49B3D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5B1710D2-5DC8-4754-91B2-19165DE49B3D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5B1710D2-5DC8-4754-91B2-19165DE49B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1710D2-5DC8-4754-91B2-19165DE49B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1710D2-5DC8-4754-91B2-19165DE49B3D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5B1710D2-5DC8-4754-91B2-19165DE49B3D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5B1710D2-5DC8-4754-91B2-19165DE49B3D}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

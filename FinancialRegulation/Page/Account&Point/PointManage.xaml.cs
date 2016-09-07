@@ -1,3 +1,4 @@
+using MahApps.Metro.Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace FinancialRegulation.Page
     /// <summary>
     /// O1.xaml 的交互逻辑
     /// </summary>
-    public partial class PointManage : BaseWindow
+    public partial class PointManage : MetroContentControl
     {
         public PointManage()
         {

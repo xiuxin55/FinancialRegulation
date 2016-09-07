@@ -14,13 +14,14 @@ using AvalonDock;
 using BaseClient;
 using Srv= BaseClient.BaseManageSrv;
 using lgsv=BaseClient.LoginSrv;
+using MahApps.Metro.Controls;
 
 namespace MainFrame
 {
     /// <summary>
     /// MenuWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class MenuWindow : DockableContent
+    public partial class MenuWindow : MetroContentControl
     {
         public Action<lgsv.MenuItem> MenuItemDoubleClick { get; set; }
 

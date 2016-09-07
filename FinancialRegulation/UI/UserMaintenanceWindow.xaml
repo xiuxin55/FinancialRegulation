@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:FinancialRegulation"
         xmlns:uc="clr-namespace:FinancialRegulation.UserCotrol"
-        Title="用户管理" Height="300" Width="300" Background="{DynamicResource MyBrush}" Icon="/FinancialRegulation;component/Images/dzlogo.ico">
+        Title="用户管理" Height="300" Width="300" Background="{DynamicResource MyBrush}" Icon="/FinancialRegulation;component/Images/logo.png">
     <local:BaseWindow.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

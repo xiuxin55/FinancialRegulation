@@ -1,4 +1,4 @@
-<local:BaseWindow x:Class="FinancialRegulation.Page.PointManage"
+<Controls:MetroContentControl x:Class="FinancialRegulation.Page.PointManage"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 			 xmlns:local="clr-namespace:FinancialRegulation"
@@ -6,14 +6,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-                           xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                              
              mc:Ignorable="d"
-             Title="网点管理"
              x:Name="wd"
              d:DesignHeight="600" d:DesignWidth="600" Tag="银行网点管理输出">
-    <local:BaseWindow.Resources>
+    <Controls:MetroContentControl.Resources>
         <ResourceDictionary Source="/FinancialRegulation;component/Template/UC_Style.xaml"></ResourceDictionary>
-    </local:BaseWindow.Resources>
+    </Controls:MetroContentControl.Resources>
     <Grid Name="MainLayout" Style="{StaticResource GridLayout}">
         <Grid.RowDefinitions>
             <RowDefinition Height="60" />
@@ -30,8 +31,8 @@
             </DockPanel>
         </materialDesign:ColorZone>
     
-        <ToolBar  Grid.ColumnSpan="1" Grid.Row="1" Style="{StaticResource ToolBarStyle}" UseLayoutRounding="False">
-            <Button Margin="6,0,0,0"  Content="添加网点" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" Command="{Binding AddCommand}" />
+        <ToolBar  Grid.ColumnSpan="1" Grid.Row="1"  UseLayoutRounding="False">
+            <Button  Margin="-10,0,0,0"   Content="添加网点" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" Command="{Binding AddCommand}" />
             <Button Margin="6,0,0,0"  Content="启用网点" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" Command="{Binding ChangeStateCommand}" CommandParameter="0" />
             <Button Margin="6,0,0,0"  Content="停用网点" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" Command="{Binding ChangeStateCommand}" CommandParameter="1" />
             <Button Margin="6,0,0,0"  Content="修改网点" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" Command="{Binding UpdateCommand}" />
@@ -47,4 +48,4 @@
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
-</local:BaseWindow>
+</Controls:MetroContentControl>

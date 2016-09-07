@@ -1,4 +1,4 @@
-<local:BaseWindow x:Class="FinancialRegulation.Page.PayInfoAddToEdit"
+<Controls:MetroWindow x:Class="FinancialRegulation.Page.PayInfoAddToEdit"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 			 xmlns:local="clr-namespace:FinancialRegulation"
@@ -8,11 +8,17 @@
              xmlns:my="clr-namespace:FinancialRegulation.Page"
              xmlns:tools="clr-namespace:FinancialRegulation.Tools"
              mc:Ignorable="d"
-             MinHeight="420" MinWidth="420" Tag="资金支付" d:DesignWidth="420" d:DesignHeight="412">
-    <local:BaseWindow.Resources>
+                   xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                      ShowIconOnTitleBar="True"
+                      ShowTitleBar="True"
+                      WindowStartupLocation="CenterScreen"
+                      GlowBrush="{DynamicResource AccentColorBrush}"
+                      NonActiveGlowBrush="#CDFF0000"
+             Height="430" Width="420" Tag="资金支付" d:DesignWidth="420" d:DesignHeight="432">
+    <Controls:MetroWindow.Resources>
 
         <ResourceDictionary Source="/FinancialRegulation;component/Template/UC_Style.xaml"></ResourceDictionary>
-    </local:BaseWindow.Resources>
+    </Controls:MetroWindow.Resources>
     <Grid Name="MainLayout" Style="{StaticResource GridLayout}" Width="Auto">
         <Grid.RowDefinitions>
             <RowDefinition Height="60" />
@@ -41,10 +47,10 @@
         <TextBox  IsEnabled="True" Margin="20,14,20,13" Name="textBox1" Text="{Binding CurrentObj.FirmOperatorName}" Grid.Column="1" Grid.Row="2" />
         <TextBox InputMethod.IsInputMethodEnabled="False" IsEnabled="True" Margin="20,17,20,10" Name="textBox2" Text="{Binding CurrentObj.FirmOperatorID}" Grid.Column="1" Grid.Row="3"  KeyDown="TextBoxSFZ_KeyDown" />
         <TextBlock Text="支付说明" Grid.Row="4" Margin="0,69,0,62" />
-        <TextBox Name="txt_Instruction" IsEnabled="True" Text="{Binding CurrentObj.PaymentInstr}"  Grid.Row="4"   Grid.Column="1" Height="122" Margin="20,11,20,20" TextWrapping="Wrap" />
+        <TextBox Name="txt_Instruction" IsEnabled="True" Text="{Binding CurrentObj.PaymentInstr}"  Grid.Row="4"   Grid.Column="1" Height="120" Margin="20,11,20,20" TextWrapping="Wrap" />
         <StackPanel  Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center" Grid.Column="1" Margin="15,0,105,0">
             <Button Style="{StaticResource ButtonCommand}" Content="资金支付" Command="{Binding OKCommand}" />
             <Button Margin="6,0,0,0"  Style="{StaticResource ButtonCommand}" Content="取消" Command="{Binding CancelCommand}" />
         </StackPanel>
     </Grid>
-</local:BaseWindow>
+</Controls:MetroWindow>

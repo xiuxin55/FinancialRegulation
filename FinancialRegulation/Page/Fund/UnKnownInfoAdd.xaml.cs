@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.Text.RegularExpressions;
 using System.Collections.ObjectModel;
 using FundsRegulatoryClient.JG_DepositSrv;
+using MahApps.Metro.Controls;
 
 
 namespace FinancialRegulation.Page
@@ -21,14 +22,14 @@ namespace FinancialRegulation.Page
     /// <summary>
     /// O1.xaml 的交互逻辑
     /// </summary>
-    public partial class UnKnownInfoAdd : BaseWindow
+    public partial class UnKnownInfoAdd : MetroWindow
     {
         public UnKnownInfoAdd( ObservableCollection<UnknowBill> Models)
         {
             InitializeComponent();
             ViewModel.UnKnownInfoAddToEditVM vm = new ViewModel.UnKnownInfoAddToEditVM();
             vm.Models = Models;
-            vm.windowClose = CloseWindow;
+            //vm.windowClose = CloseWindow;
             this.DataContext = vm;
         }
 

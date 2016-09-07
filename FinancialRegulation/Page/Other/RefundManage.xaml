@@ -1,16 +1,17 @@
-﻿<local:BaseWindow x:Class="FinancialRegulation.Page.Fund.RefundManage"
+﻿<Controls:MetroContentControl x:Class="FinancialRegulation.Page.Fund.RefundManage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:FinancialRegulation"
         xmlns:localVM ="clr-namespace:FinancialRegulation.Page.Fund"
                      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
                   xmlns:tool="clr-namespace:FinancialRegulation.Tools"
-        Title="退票交易" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="600" Width="1299">
-    <local:BaseWindow.Resources>
+                   xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+         mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" >
+    <Controls:MetroContentControl.Resources>
         <ResourceDictionary Source="/FinancialRegulation;component/Template/UC_Style.xaml"></ResourceDictionary>
         
-    </local:BaseWindow.Resources>
+    </Controls:MetroContentControl.Resources>
     <Grid Style="{StaticResource GridLayout}">
         <Grid.Resources>
             <tool:DateTimeConvert x:Key="DateTimeConvert"/>
@@ -56,9 +57,9 @@
                 </ListView.View>
             </ListView>-->
         </Grid>
-        <ToolBar Grid.Column="1"  Style="{StaticResource ToolBarStyle}" Grid.Row="1">
-            <Button BorderBrush="#FFB1B1B1" Command="{Binding RefundCommand}" Content="进行退票" Style="{StaticResource ButtonCommand}" />
+        <ToolBar Grid.Column="1" Grid.Row="1">
+            <Button  Margin="-11,0,0,0"  BorderBrush="#FFB1B1B1" Command="{Binding RefundCommand}" Content="进行退票" Style="{StaticResource ButtonCommand}" />
             <Button Margin="6,0,0,0"  BorderBrush="#FFB1B1B1" Command="{Binding FlushCommand}" Content="刷新" Style="{StaticResource ButtonCommand}" />
         </ToolBar>
     </Grid>
-</local:BaseWindow>
+</Controls:MetroContentControl>

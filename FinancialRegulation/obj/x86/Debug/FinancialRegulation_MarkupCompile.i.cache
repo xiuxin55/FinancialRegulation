@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-47112385201
+42-1332658945
 
-1251131300079
-32-1118275651
-App.xaml;Page\Account&Point\OpenAccountAddToEdit.xaml;Page\Account&Point\OpenAccountManage.xaml;Page\Account&Point\PointEdit.xaml;Page\Account&Point\PointManage.xaml;Page\Account&Point\AccountSearch.xaml;Page\Accrual\BillCheckWindow.xaml;Page\Accrual\PayAccrualManage.xaml;Page\Accrual\PayAccrualSearch.xaml;Page\Account&Point\AdjustAccount.xaml;Page\Accrual\AccrualManage.xaml;Page\Accrual\InterestCheckBill.xaml;Page\Accrual\DateSelectWindow.xaml;Page\Fund\FundInfoCheck.xaml;Page\Fund\FundInfoManage.xaml;Page\Fund\ReverseTrade.xaml;Page\UnknowBill\FundInfoManage.xaml;Page\UnknowBill\UnKnownInfoManage.xaml;Page\UnknowBill\UnKnownInfoAddToEdit.xaml;Page\Fund\WithholdInfoAddToEdit.xaml;Page\Fund\UnKnownInfoAdd.xaml;Page\Fund\ReadCongEdit.xaml;Page\Fund\FundInfoAddToEdit.xaml;Page\Other\BillCheckWindow.xaml;Page\Other\TodayCheckBill.xaml;Page\Other\InterestRateManager.xaml;Page\Other\QueryWindow.xaml;Page\Other\SysConfigEdit.xaml;Page\Other\MessageWindow.xaml;Page\Other\InterestRateEdit.xaml;Page\Other\RefundManage.xaml;Page\Other\RefundInfoAddToEdit.xaml;Page\Pay\PayInfoAddToEdit.xaml;Page\Pay\PayInfoCheck.xaml;Page\Pay\PayManage.xaml;Page\Account&Point\AdjustAccountEdit.xaml;Page\Pay\ReverseTrade.xaml;Page\ProtocolManage\ProtocolDepositWindow.xaml;Page\ProtocolManage\ProtocolManage.xaml;Page\ProtocolManage\ProtocolPamentWindow.xaml;Page\UnknowBill\UnKnownInfoCheck.xaml;Template\ButtonStyle.xaml;Template\ColorStyle.xaml;Template\ControlStyle.xaml;Template\UC_Style.xaml;UI\DutyMaintainWindow.xaml;UI\UserMaintenanceWindow.xaml;
+1111200995406
+33962497555
+App.xaml;Page\Account&Point\OpenAccountAddToEdit.xaml;Page\Account&Point\OpenAccountManage.xaml;Page\Account&Point\PointEdit.xaml;Page\Account&Point\PointManage.xaml;Page\Account&Point\AccountSearch.xaml;Page\Accrual\BillCheckWindow.xaml;Page\Accrual\PayAccrualManage.xaml;Page\Accrual\InterestCheckBill.xaml;Page\Accrual\DateSelectWindow.xaml;Page\Fund\FundInfoCheck.xaml;Page\Fund\FundInfoManage.xaml;Page\Fund\ReverseTrade.xaml;Page\UnknowBill\FundInfoManage.xaml;Page\UnknowBill\UnKnownInfoManage.xaml;Page\UnknowBill\UnKnownInfoAddToEdit.xaml;Page\Fund\UnKnownInfoAdd.xaml;Page\Fund\FundInfoAddToEdit.xaml;Page\Other\BillCheckWindow.xaml;Page\Other\TodayCheckBill.xaml;Page\Other\InterestRateManager.xaml;Page\Other\SysConfigEdit.xaml;Page\Other\InterestRateEdit.xaml;Page\Other\RefundManage.xaml;Page\Other\RefundInfoAddToEdit.xaml;Page\Pay\PayInfoAddToEdit.xaml;Page\Pay\PayInfoCheck.xaml;Page\Pay\PayManage.xaml;Page\Pay\ReverseTrade.xaml;Page\UnknowBill\UnKnownInfoCheck.xaml;Template\ButtonStyle.xaml;Template\ColorStyle.xaml;Template\ControlStyle.xaml;Template\UC_Style.xaml;UI\DutyMaintainWindow.xaml;UI\UserMaintenanceWindow.xaml;WPFDutyUser\DutyInfo.xaml;WPFDutyUser\DutyMaintain.xaml;WPFDutyUser\DutySet.xaml;WPFDutyUser\FunSetForm.xaml;WPFDutyUser\UserInfo.xaml;WPFDutyUser\UserMaintenance.xaml;
 
 False
 

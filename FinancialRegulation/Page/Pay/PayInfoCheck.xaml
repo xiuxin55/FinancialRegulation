@@ -1,4 +1,4 @@
-<local:BaseWindow x:Class="FinancialRegulation.Page.PayInfoCheck"
+<Controls:MetroWindow x:Class="FinancialRegulation.Page.PayInfoCheck"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 			 xmlns:local="clr-namespace:FinancialRegulation"
@@ -8,11 +8,17 @@
              xmlns:my="clr-namespace:FinancialRegulation.Page"
              xmlns:tools="clr-namespace:FinancialRegulation.Tools"
              mc:Ignorable="d"
-             MinHeight="610" MinWidth="684" Tag="资金支付" d:DesignHeight="636" d:DesignWidth="684">
-    <local:BaseWindow.Resources>
+                   xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                      ShowIconOnTitleBar="True"
+                      ShowTitleBar="True"
+                      WindowStartupLocation="CenterScreen"
+                      GlowBrush="{DynamicResource AccentColorBrush}"
+                      NonActiveGlowBrush="#CDFF0000"
+             Height="630" Width="684" Tag="资金支付" d:DesignHeight="636" d:DesignWidth="684">
+    <Controls:MetroWindow.Resources>
 
         <ResourceDictionary Source="/FinancialRegulation;component/Template/UC_Style.xaml"></ResourceDictionary>
-    </local:BaseWindow.Resources>
+    </Controls:MetroWindow.Resources>
     <Grid Name="MainLayout" Style="{StaticResource GridLayout}" Width="Auto" MinWidth="684">
         <Grid.RowDefinitions>
             <RowDefinition Height="60" />
@@ -73,4 +79,4 @@
             <Button Margin="6,0,0,0"  Style="{StaticResource ButtonCommand}" Content="取消" Command="{Binding CancelCommand}" />
             </StackPanel>
     </Grid>
-</local:BaseWindow>
+</Controls:MetroWindow>

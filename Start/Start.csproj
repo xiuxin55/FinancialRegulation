@@ -63,7 +63,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Start.Program</StartupObject>
+    <StartupObject>Start.App</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>001.ico</ApplicationIcon>
@@ -71,12 +71,6 @@
   <ItemGroup>
     <Reference Include="AutoUpdate">
       <HintPath>..\Utils\AutoUpdate.dll</HintPath>
-    </Reference>
-    <Reference Include="MahApps.Metro">
-      <HintPath>..\Utils\MahApps.Metro.dll</HintPath>
-    </Reference>
-    <Reference Include="MahApps.Metro.Resources">
-      <HintPath>..\Utils\MahApps.Metro.Resources.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -156,6 +150,10 @@
     <ProjectReference Include="..\FinancialRegulation\FinancialRegulation.csproj">
       <Project>{FBBDB0FA-8138-4B95-A4E0-AB88BF5CFE12}</Project>
       <Name>FinancialRegulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MahApps.Metro\MahApps.Metro.csproj">
+      <Project>{5b1710d2-5dc8-4754-91b2-19165de49b3d}</Project>
+      <Name>MahApps.Metro</Name>
     </ProjectReference>
     <ProjectReference Include="..\MainFrame\MainFrame.csproj">
       <Project>{BB2BDC2A-4E11-47F5-B5A1-92F46E548200}</Project>

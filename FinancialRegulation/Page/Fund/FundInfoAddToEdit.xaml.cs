@@ -3,19 +3,20 @@ using System.Text.RegularExpressions;
 using System.Windows.Input;
 using FundsRegulatoryClient.JG_DepositSrv;
 using System.Collections.ObjectModel;
+using MahApps.Metro.Controls;
 namespace FinancialRegulation.Page
 {
     /// <summary>
     /// O1.xaml 的交互逻辑
     /// </summary>
-    public partial class FundInfoAddToEdit : BaseWindow
+    public partial class FundInfoAddToEdit : MetroWindow
     {
         public FundInfoAddToEdit(Message.NewMessage.Response.Response02 DepositResponse,DepositFund df,ObservableCollection<DepositFund> models)
         {
             InitializeComponent();
             ViewModel.FundInfoEditVM vm = new ViewModel.FundInfoEditVM(DepositResponse, df, models);
-            vm.windowClose = CloseWindow;
-            vm.windowOK = OpenNewWindow;
+            //vm.windowClose = CloseWindow;
+            //vm.windowOK = OpenNewWindow;
             this.DataContext = vm;
         }
 

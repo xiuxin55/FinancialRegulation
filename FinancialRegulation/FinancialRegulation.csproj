@@ -101,18 +101,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Page\Account&amp;Point\AccountSearchVM.cs" />
-    <Compile Include="Page\Account&amp;Point\AdjustAccount.xaml.cs">
-      <DependentUpon>AdjustAccount.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Page\Account&amp;Point\AdjustAccountVM.cs" />
-    <Compile Include="Page\Account&amp;Point\AdjustAccountEditVM.cs" />
     <Compile Include="Page\Account&amp;Point\AccountSearch.xaml.cs">
       <DependentUpon>AccountSearch.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\Accrual\AccrualManage.xaml.cs">
-      <DependentUpon>AccrualManage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Page\Accrual\AccrualManageVM.cs" />
     <Compile Include="Page\Accrual\BillCheckWindow.xaml.cs">
       <DependentUpon>BillCheckWindow.xaml</DependentUpon>
     </Compile>
@@ -125,13 +116,6 @@
       <DependentUpon>DateSelectWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Page\Accrual\DateSelectWindowVm.cs" />
-    <Compile Include="Page\Fund\ReadCongEdit.xaml.cs">
-      <DependentUpon>ReadCongEdit.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Page\Fund\ReadCongEditVM.cs" />
-    <Compile Include="Page\Account&amp;Point\AdjustAccountEdit.xaml.cs">
-      <DependentUpon>AdjustAccountEdit.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Page\Fund\FundInfoAddToEdit.xaml.cs">
       <DependentUpon>FundInfoAddToEdit.xaml</DependentUpon>
     </Compile>
@@ -148,10 +132,6 @@
       <DependentUpon>TodayCheckBill.xaml</DependentUpon>
     </Compile>
     <Compile Include="Page\Other\TodayCheckBillVM.cs" />
-    <Compile Include="Page\Other\QueryWindow.xaml.cs">
-      <DependentUpon>QueryWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Page\Other\QueryWindowVM.cs" />
     <Compile Include="Page\Other\RefundManage.xaml.cs">
       <DependentUpon>RefundManage.xaml</DependentUpon>
     </Compile>
@@ -176,14 +156,6 @@
       <DependentUpon>ReverseTrade.xaml</DependentUpon>
     </Compile>
     <Compile Include="Page\Pay\ReverseTradeVM.cs" />
-    <Compile Include="Page\ProtocolManage\ProtocolDepositVM.cs" />
-    <Compile Include="Page\ProtocolManage\ProtocolDepositWindow.xaml.cs">
-      <DependentUpon>ProtocolDepositWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Page\ProtocolManage\ProtocolPamentVM.cs" />
-    <Compile Include="Page\ProtocolManage\ProtocolPamentWindow.xaml.cs">
-      <DependentUpon>ProtocolPamentWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Page\UnknowBill\FundInfoManage.xaml.cs">
       <DependentUpon>FundInfoManage.xaml</DependentUpon>
     </Compile>
@@ -217,10 +189,6 @@
       <DependentUpon>PayAccrualManage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Page\Accrual\PayAccrualManageVM.cs" />
-    <Compile Include="Page\Accrual\PayAccrualSearch.xaml.cs">
-      <DependentUpon>PayAccrualSearch.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Page\Accrual\PayAccrualSearchVM.cs" />
     <Compile Include="Page\Fund\FundInfoCheck.xaml.cs">
       <DependentUpon>FundInfoCheck.xaml</DependentUpon>
     </Compile>
@@ -237,10 +205,6 @@
       <DependentUpon>UnKnownInfoAddToEdit.xaml</DependentUpon>
     </Compile>
     <Compile Include="Page\UnknowBill\UnKnownInfoAddToEditVM.cs" />
-    <Compile Include="Page\Fund\WithholdInfoAddToEdit.xaml.cs">
-      <DependentUpon>WithholdInfoAddToEdit.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Page\Fund\WithholdInfoAddToEditVM.cs" />
     <Compile Include="Page\Fund\UnKnownInfoAdd.xaml.cs">
       <DependentUpon>UnKnownInfoAdd.xaml</DependentUpon>
     </Compile>
@@ -252,18 +216,11 @@
     <Compile Include="Page\Other\SysConfigEdit.xaml.cs">
       <DependentUpon>SysConfigEdit.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\Other\MessageWindow.xaml.cs">
-      <DependentUpon>MessageWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Page\Other\SysConfigEditVM.cs" />
     <Compile Include="Page\Other\InterestRateEditVM.cs" />
     <Compile Include="Page\Other\InterestRateEdit.xaml.cs">
       <DependentUpon>InterestRateEdit.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\ProtocolManage\ProtocolManage.xaml.cs">
-      <DependentUpon>ProtocolManage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Page\ProtocolManage\ProtocolManageVM.cs" />
     <Compile Include="ViewModel\Exception\CheckException.cs" />
     <Compile Include="Tools\CommonConvert.cs" />
     <Compile Include="Tools\DataConvert.cs" />
@@ -277,6 +234,25 @@
     <Compile Include="ViewModel\BaseManageVM.cs" />
     <Compile Include="ViewModel\BaseVM.cs" />
     <Compile Include="ViewModel\InterFace\ISearch.cs" />
+    <Compile Include="WPFDutyUser\DutyInfo.xaml.cs">
+      <DependentUpon>DutyInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFDutyUser\DutyMaintain.xaml.cs">
+      <DependentUpon>DutyMaintain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFDutyUser\DutySet.xaml.cs">
+      <DependentUpon>DutySet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFDutyUser\DutyMaintainVM.cs" />
+    <Compile Include="WPFDutyUser\FunSetForm.xaml.cs">
+      <DependentUpon>FunSetForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFDutyUser\UserInfo.xaml.cs">
+      <DependentUpon>UserInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFDutyUser\UserMaintenance.xaml.cs">
+      <DependentUpon>UserMaintenance.xaml</DependentUpon>
+    </Compile>
     <Page Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -363,18 +339,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Page\Accrual\PayAccrualSearch.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Page\Account&amp;Point\AdjustAccount.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Page\Accrual\AccrualManage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Page\Accrual\InterestCheckBill.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -407,15 +371,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Page\Fund\WithholdInfoAddToEdit.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Page\Fund\UnKnownInfoAdd.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Page\Fund\ReadCongEdit.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -435,17 +391,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\Other\QueryWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Page\Other\SysConfigEdit.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Page\Other\MessageWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Page\Other\InterestRateEdit.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -471,23 +419,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Page\Account&amp;Point\AdjustAccountEdit.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Page\Pay\ReverseTrade.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Page\ProtocolManage\ProtocolDepositWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Page\ProtocolManage\ProtocolManage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Page\ProtocolManage\ProtocolPamentWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -519,6 +451,30 @@
     <Page Include="UI\UserMaintenanceWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WPFDutyUser\DutyInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFDutyUser\DutyMaintain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFDutyUser\DutySet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFDutyUser\FunSetForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFDutyUser\UserInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFDutyUser\UserMaintenance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -577,6 +533,10 @@
       <Project>{602f963a-276d-43a4-80dd-71f0b5a172ce}</Project>
       <Name>FundsRegulatoryClient</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MahApps.Metro\MahApps.Metro.csproj">
+      <Project>{5b1710d2-5dc8-4754-91b2-19165de49b3d}</Project>
+      <Name>MahApps.Metro</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Message\Message.csproj">
       <Project>{f754d6a1-1fbf-42f5-9f70-b0291275f407}</Project>
       <Name>Message</Name>
@@ -587,12 +547,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\dzlogo.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\main-bg.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

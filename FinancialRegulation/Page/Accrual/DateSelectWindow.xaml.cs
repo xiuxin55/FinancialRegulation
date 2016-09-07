@@ -3,12 +3,13 @@ using System.Text.RegularExpressions;
 using System.Windows.Input;
 using FundsRegulatoryClient.JG_PaymentSrv;
 using System.Collections.ObjectModel;
+using MahApps.Metro.Controls;
 namespace FinancialRegulation.Page.Accrual
 {
     /// <summary>
     /// O1.xaml 的交互逻辑
     /// </summary>
-    public partial class DateSelectWindow : BaseWindow
+    public partial class DateSelectWindow : MetroWindow
     {
         private DateSelectWindowVm vm;
         public DateSelectWindow(DateSelectWindowVm vm)
@@ -18,7 +19,7 @@ namespace FinancialRegulation.Page.Accrual
         }
         private void Cancel_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            this.CloseWindow();
+            //this.CloseWindow();
         }
        
         private void Commint_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -32,7 +33,7 @@ namespace FinancialRegulation.Page.Accrual
                return;
            }
           
-           this.OpenNewWindow();
+           //this.OpenNewWindow();
         }
 
         #region TextBox的输入限制

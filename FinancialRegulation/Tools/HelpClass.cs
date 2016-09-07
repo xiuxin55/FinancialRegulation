@@ -297,32 +297,32 @@ namespace FinancialRegulation.Tools
             return MessageBox.Show(msg, "系统提示", MessageBoxButton.OKCancel, MessageBoxImage.Question) == MessageBoxResult.OK;
         }
 
-        /// <summary>
-        /// 提示对话框获取值
-        /// </summary>
-        /// <param name="o">输出值</param>
-        /// <returns>是否取到</returns>
-        public bool GetValueMessage(out object o)
-        {
-            Page.MessageWindow mw = new Page.MessageWindow();
-            mw.ShowDialog();
-            o = mw.Result;
-            return o != null;
-        }
-        /// <summary>
-        /// 提示对话框并获取值
-        /// </summary>
-        /// <param name="o">输出值</param>
-        /// <param name="title">窗体标题</param>
-        /// <returns>是否取到</returns>
-        public bool GetValueMessage(out object o, string title)
-        {
-            Page.MessageWindow mw = new Page.MessageWindow();
-            mw.Title = title;
-            mw.ShowDialog();
-            o = mw.Result;
-            return o != null;
-        }
+        ///// <summary>
+        ///// 提示对话框获取值
+        ///// </summary>
+        ///// <param name="o">输出值</param>
+        ///// <returns>是否取到</returns>
+        //public bool GetValueMessage(out object o)
+        //{
+        //    Page.MessageWindow mw = new Page.MessageWindow();
+        //    mw.ShowDialog();
+        //    o = mw.Result;
+        //    return o != null;
+        //}
+        ///// <summary>
+        ///// 提示对话框并获取值
+        ///// </summary>
+        ///// <param name="o">输出值</param>
+        ///// <param name="title">窗体标题</param>
+        ///// <returns>是否取到</returns>
+        //public bool GetValueMessage(out object o, string title)
+        //{
+        //    Page.MessageWindow mw = new Page.MessageWindow();
+        //    mw.Title = title;
+        //    mw.ShowDialog();
+        //    o = mw.Result;
+        //    return o != null;
+        //}
         #endregion
         /// <summary>
         /// 返回缴款类型

@@ -36,21 +36,22 @@ namespace FinancialRegulationSRV
          [WebMethod(Description = "生成对账单文件")]
          public bool ProduceBillFile(string[] bill, string filepath, string filename)
          {
-             if (filepath == null)
-             {
-                 filepath = AppDomain.CurrentDomain.BaseDirectory + filename;
-             }
-             else
-             {
-                 if (filepath[filepath.Length - 1] != '\\')
-                 {
-                     filepath = filepath + "\\";
-                 }
-                 filepath = filepath + filename;
-                 filepath = AppDomain.CurrentDomain.BaseDirectory + filepath;
-             }
              try
              {
+                 if (filepath == null)
+                 {
+                     filepath = AppDomain.CurrentDomain.BaseDirectory + filename;
+                 }
+                 else
+                 {
+                     if (filepath[filepath.Length - 1] != '\\')
+                     {
+                         filepath = filepath + "\\";
+                     }
+                     filepath = filepath + filename;
+                     filepath = AppDomain.CurrentDomain.BaseDirectory + filepath;
+                 }
+
                  if (File.Exists(filepath))
                  {
                      File.Delete(filepath);
@@ -58,8 +59,9 @@ namespace FinancialRegulationSRV
                  File.WriteAllLines(filepath, bill);
                  return true;
              }
-             catch
+             catch (Exception e)
              {
+                 File.AppendAllText(AppDomain.CurrentDomain.BaseDirectory + DateTime.Now.ToString("yyyyMMdd") + "log.txt", e.Message + ":" + e.StackTrace);
                  return false;
              }
          }

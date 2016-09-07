@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
 using System.Collections.ObjectModel;
+using MahApps.Metro.Controls;
 
 
 namespace FinancialRegulation.Page
@@ -20,15 +21,15 @@ namespace FinancialRegulation.Page
     /// <summary>
     /// O1.xaml 的交互逻辑
     /// </summary>
-    public partial class RefundInfoAddToEdit : BaseWindow
+    public partial class RefundInfoAddToEdit : MetroWindow
     {
         public RefundInfoAddToEdit(ObservableCollection<FundsRegulatoryClient.RefunTradeSrv.RefundTrade> Models)
         {
             InitializeComponent();
             ViewModel.RefundInfoAddToEditVM vm = new ViewModel.RefundInfoAddToEditVM();
             vm.Models = Models;
-            vm.windowClose = CloseWindow;
-            vm.windowOK = OpenNewWindow;
+            //vm.windowClose = CloseWindow;
+            //vm.windowOK = OpenNewWindow;
             this.DataContext = vm;
         }
 

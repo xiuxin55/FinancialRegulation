@@ -1,4 +1,4 @@
-<local:BaseWindow x:Class="FinancialRegulation.Page.Accrual.DateSelectWindow"
+<Controls:MetroWindow   x:Class="FinancialRegulation.Page.Accrual.DateSelectWindow"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 			 xmlns:local="clr-namespace:FinancialRegulation"
@@ -8,11 +8,17 @@
              xmlns:my="clr-namespace:FinancialRegulation.Page"
              xmlns:tools="clr-namespace:FinancialRegulation.Tools"
              mc:Ignorable="d"
-             MinHeight="220" MinWidth="400" Tag="日期选择" d:DesignWidth="400" d:DesignHeight="220" IsManipulationEnabled="False">
-    <local:BaseWindow.Resources>
+                          xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                      ShowIconOnTitleBar="True"
+                      ShowTitleBar="True"
+                      WindowStartupLocation="CenterScreen"
+                      GlowBrush="{DynamicResource AccentColorBrush}"
+                      NonActiveGlowBrush="#CDFF0000"
+             Height="240" Width="400" Tag="日期选择" d:DesignWidth="400" d:DesignHeight="220" IsManipulationEnabled="False">
+    <Controls:MetroWindow.Resources>
 
         <ResourceDictionary Source="/FinancialRegulation;component/Template/UC_Style.xaml"></ResourceDictionary>
-    </local:BaseWindow.Resources>
+    </Controls:MetroWindow.Resources>
     <Grid Name="MainLayout" Style="{StaticResource GridLayout}" Width="Auto">
         <Grid.RowDefinitions>
             <RowDefinition Height="60" />
@@ -41,4 +47,4 @@
        
         
     </Grid>
-</local:BaseWindow>
+</Controls:MetroWindow>

@@ -11,13 +11,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using AvalonDock;
+using MahApps.Metro.Controls;
 
 namespace BaseManage
 {
     /// <summary>
     /// MenuManageWindow.xaml 的交互逻辑 DockableContent
     /// </summary>
-    public partial class MenuManageWindow : DockableContent
+    public partial class MenuManageWindow : MetroContentControl
     {
         public MenuManageWindow()
         {

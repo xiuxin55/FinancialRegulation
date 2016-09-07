@@ -5,12 +5,13 @@ using System;
 using FundsRegulatoryClient.JG_AccountManageSrv;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using MahApps.Metro.Controls;
 namespace FinancialRegulation.Page
 {
     /// <summary>
     /// O1.xaml 的交互逻辑
     /// </summary>
-    public partial class OpenAccountAddToEdit : BaseWindow
+    public partial class OpenAccountAddToEdit : MetroWindow
     {
         public OpenAccountAddToEdit(JG_AccountManageInfo account, ObservableCollection<JG_AccountManageInfo> Models)
         {
@@ -18,7 +19,7 @@ namespace FinancialRegulation.Page
             if (account != null && Models != null)
             { header.Content = "账户修改"; }
             ViewModel.OpenAccountEditVM vm = new ViewModel.OpenAccountEditVM(account,Models);
-            vm.windowClose = this.CloseWindow;
+            //vm.windowClose = this.CloseWindow;
             this.DataContext = vm;
         }
         /// <summary>

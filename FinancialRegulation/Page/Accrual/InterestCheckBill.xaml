@@ -1,18 +1,19 @@
-﻿<local:BaseWindow x:Class="FinancialRegulation.Page.InterestCheckBill"
+﻿<Controls:MetroContentControl x:Class="FinancialRegulation.Page.InterestCheckBill"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 			 xmlns:local="clr-namespace:FinancialRegulation"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-                  xmlns:tool="clr-namespace:FinancialRegulation.Tools"
-                   xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:tool="clr-namespace:FinancialRegulation.Tools"  
+             xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d"
                   x:Name="FundInfoManageWindow"
-             d:DesignHeight="600" d:DesignWidth="815" Title="利息对账">
-    <local:BaseWindow.Resources>
+             d:DesignHeight="600" d:DesignWidth="815" >
+    <Controls:MetroContentControl.Resources>
         <ResourceDictionary Source="/FinancialRegulation;component/Template/UC_Style.xaml"></ResourceDictionary>
-    </local:BaseWindow.Resources>
+    </Controls:MetroContentControl.Resources>
     <Grid Name="MainLayout" Style="{StaticResource GridLayout}">
         <Grid.RowDefinitions>
             <RowDefinition Height="60" />
@@ -31,8 +32,8 @@
                 <TextBlock Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" Height="40" Margin="0,20,20,0" >利息对账</TextBlock>
             </DockPanel>
         </materialDesign:ColorZone>
-        <ToolBar Style="{StaticResource ToolBarStyle}" Grid.Row="1">
-            <Button Content="刷新" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" Command="{Binding BillTableCommand}" />
+        <ToolBar  Grid.Row="1">
+            <Button  Margin="-10,0,0,0"  Content="刷新" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" Command="{Binding BillTableCommand}" />
             <Button Margin="6,0,0,0"  Content="生成对账单" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" Command="{Binding ProduceFileCommand}" Width="Auto" />
             <Button Margin="6,0,0,0"  Content="上传文件" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" Command="{Binding UpLoadFileCommand}" Width="Auto" />
             <Button Margin="6,0,0,0"  Content="发起对账" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1" Command="{Binding SendBillCommand}" Width="Auto" />
@@ -60,4 +61,4 @@
         </DataGrid>
         
     </Grid>
-</local:BaseWindow>
+</Controls:MetroContentControl>

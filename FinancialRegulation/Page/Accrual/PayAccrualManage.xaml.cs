@@ -1,9 +1,10 @@
-﻿namespace FinancialRegulation.Page
+﻿using MahApps.Metro.Controls;
+namespace FinancialRegulation.Page
 {
     /// <summary>
     /// PayAccrualManage.xaml 的交互逻辑
     /// </summary>
-    public partial class PayAccrualManage : BaseWindow
+    public partial class PayAccrualManage : MetroContentControl
     {
         public PayAccrualManage()
         {

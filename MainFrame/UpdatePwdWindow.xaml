@@ -1,7 +1,7 @@
 ﻿<Window x:Class="MainFrame.UpdatePwdWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="修改密码" Height="180" Width="300" xmlns:my="clr-namespace:MainFrame" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="/MainFrame;component/dzlogo.ico">
+        Title="修改密码" Height="180" Width="300" xmlns:my="clr-namespace:MainFrame" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="/MainFrame;component/logo.png">
     <Window.Resources>
         <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">

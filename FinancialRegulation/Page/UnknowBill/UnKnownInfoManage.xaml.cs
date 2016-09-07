@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace FinancialRegulation.Page.Fund
     /// <summary>
     /// ProtocolManage.xaml 的交互逻辑
     /// </summary>
-    public partial class UnKnownInfoManage : BaseWindow
+    public partial class UnKnownInfoManage : MetroContentControl
     {
         UnKnownInfoManageVM uk = new UnKnownInfoManageVM();
         public UnKnownInfoManage()

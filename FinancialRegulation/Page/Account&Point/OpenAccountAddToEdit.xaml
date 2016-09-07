@@ -1,15 +1,21 @@
-<local:BaseWindow x:Class="FinancialRegulation.Page.OpenAccountAddToEdit"
+<Controls:MetroWindow x:Class="FinancialRegulation.Page.OpenAccountAddToEdit"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 			 xmlns:local="clr-namespace:FinancialRegulation"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                      ShowIconOnTitleBar="True"
+                      ShowTitleBar="True"
+                      WindowStartupLocation="CenterScreen"
+                      GlowBrush="{DynamicResource AccentColorBrush}"
+                      NonActiveGlowBrush="#CDFF0000"
              mc:Ignorable="d" 
-                  Tag="开户" MinWidth="580"  MinHeight="450" d:DesignHeight="459" d:DesignWidth="580">
-    <local:BaseWindow.Resources>
+                  Tag="开户" Width="580"  Height="480">
+    <Controls:MetroWindow.Resources>
         <ResourceDictionary Source="/FinancialRegulation;component/Template/UC_Style.xaml"></ResourceDictionary>
-    </local:BaseWindow.Resources>
+    </Controls:MetroWindow.Resources>
     <Grid Name="MainLayout" Style="{StaticResource GridLayout}" Height="Auto">
         <Grid.RowDefinitions>
             <RowDefinition Height="60" />
@@ -46,7 +52,7 @@
             <Button Style="{StaticResource ButtonCommand}" Content="确认"  Command="{Binding OKCommand}" />
             <Button Margin="6,0,0,0"  Style="{StaticResource ButtonCommand}" Content="取消" Command="{Binding CancelCommand}" />
         </StackPanel>
-        <Label Name="header" Content="开户" Style="{StaticResource LabelTitle}"  Height="AUTO" Grid.ColumnSpan="2" />
+        <Label Name="header" Content="开户" Style="{StaticResource LabelTitle}"  Height="AUTO" Grid.ColumnSpan="2"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"  />
         <ComboBox Grid.Column="1"  Grid.Row="7" Height="25" Text="{Binding CurrentObj.AM_UseFlag}"  Name="comboBox1" Margin="20,14,20,11" Background="#AFFFFFFF">
             <ComboBoxItem Content="正常" />
             <ComboBoxItem Content="销户" />
@@ -54,4 +60,4 @@
         <TextBlock Margin="0,14,20,16" Text="开发企业名称" Grid.Row="1" />
         <TextBox Margin="20,9,20,16" Name="textBox1" Text="{Binding CurrentObj.AM_CorpName}" Grid.Column="1" Grid.Row="1" />
     </Grid>
-</local:BaseWindow>
+</Controls:MetroWindow>

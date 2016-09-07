@@ -2,19 +2,20 @@ using System.Windows.Controls;
 using System.Text.RegularExpressions;
 using System.Windows.Input;
 using System.Collections.ObjectModel;
+using MahApps.Metro.Controls;
 namespace FinancialRegulation.Page
 {
     /// <summary>
     /// O1.xaml 的交互逻辑
     /// </summary>
-    public partial class FundInfoCheck : BaseWindow
+    public partial class FundInfoCheck : MetroWindow
     {
         public FundInfoCheck(ObservableCollection<FundsRegulatoryClient.JG_DepositSrv.DepositFund> df)
         {
             InitializeComponent();
             ViewModel.FundInfoCheckVM vm = new ViewModel.FundInfoCheckVM(df);
-            vm.windowClose = CloseWindow;
-            vm.windowOK = OpenNewWindow;
+            //vm.windowClose = CloseWindow;
+            //vm.windowOK = OpenNewWindow;
             this.DataContext = vm;
         }
 
