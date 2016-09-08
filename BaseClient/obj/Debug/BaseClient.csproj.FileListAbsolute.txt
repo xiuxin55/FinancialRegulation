@@ -45,3 +45,12 @@ E:\个人\GitHub_资金监管\FinancialRegulation\BaseClient\bin\Debug\Common.pd
 E:\个人\GitHub_资金监管\FinancialRegulation\BaseClient\obj\Debug\BaseClient.csprojResolveAssemblyReference.cache
 E:\个人\GitHub_资金监管\FinancialRegulation\BaseClient\obj\Debug\BaseClient.dll
 E:\个人\GitHub_资金监管\FinancialRegulation\BaseClient\obj\Debug\BaseClient.pdb
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\bin\Debug\UpdateList.xml
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\bin\Debug\BaseClient.dll.config
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\bin\Debug\BaseClient.dll
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\bin\Debug\BaseClient.pdb
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\bin\Debug\Common.dll
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\bin\Debug\Common.pdb
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\obj\Debug\BaseClient.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\obj\Debug\BaseClient.dll
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseClient\obj\Debug\BaseClient.pdb

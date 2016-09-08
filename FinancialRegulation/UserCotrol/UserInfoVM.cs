@@ -75,11 +75,29 @@ namespace FinancialRegulation.UserCotrol
         }
         public MetroWindow Owner { get; set; }
 
-        private string repeatePassword;
+
+        private PasswordBox onePassword;
         /// <summary>
         /// 重复的密码
         /// </summary>
-        public string RepeatePassword
+        public PasswordBox OnePassword
+        {
+            get
+            {
+                return onePassword;
+            }
+
+            set
+            {
+                onePassword = value;
+            }
+        }
+
+        private PasswordBox repeatePassword;
+        /// <summary>
+        /// 重复的密码
+        /// </summary>
+        public PasswordBox RepeatePassword
         {
             get
             {
@@ -89,7 +107,6 @@ namespace FinancialRegulation.UserCotrol
             set
             {
                 repeatePassword = value;
-                RaisePropertyChanged("RepeatePassword");
             }
         }
 
@@ -126,39 +143,66 @@ namespace FinancialRegulation.UserCotrol
         #region 命令方法
         public void OkExecute()
         {
-           //if(SelectUser != null)
-           // {
-           //     FundsRegulatoryClient.UserManageSrv.UserInfo ui = new FundsRegulatoryClient.UserManageSrv.UserInfo();
-           //     dt.DutyID = SelectDuty.DutyId?? Guid.NewGuid().ToString();
-           //     dt.DutyCode = SelectDuty.DutyCode;
-           //     dt.DutyName = SelectDuty.DutyName;
-           //     dt.Describe = SelectDuty.DutyDescribe;
-           //     try
-           //     {
-           //         if (SelectDuty.DutyId != null)
-           //         {
-           //             if (DutyManageClient.Current.UpdateDuty(dt) == "1")
-           //             {
-           //                 MessageBox.Show("操作成功");
-           //             }
-           //         }
-           //         else
-           //         {
-           //             if (DutyManageClient.Current.InsertDuty(dt) == "1")
-           //             {
-           //                 MessageBox.Show("操作成功");
-           //             }
-           //         }
-           //         if(Owner!=null)
-           //         {
-           //             Owner.Close();
-           //         }
-           //     }
-           //     catch (Exception ex)
-           //     {
-           //         throw new Exception(ex.ToString());
-           //     }
-           // }
+            SelectUser.UserPwd = OnePassword.Password;
+          
+            if (string.IsNullOrWhiteSpace(SelectUser.UserCode))
+            {
+                MessageBox.Show("登录名不能为空");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(SelectUser.UserPwd))
+            {
+                MessageBox.Show("登录密码不能为空");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(SelectUser.UserName))
+            {
+                MessageBox.Show("用户姓名不能为空");
+                return;
+            }
+            if (SelectUser.UserPwd != RepeatePassword.Password)
+            {
+                MessageBox.Show("两次密码不一致");
+                return;
+            }
+            if (SelectUser.Ssq ==null )
+            {
+                MessageBox.Show("所属网点不能为空");
+                return;
+            }
+            try
+            {
+                if (SelectUser.UserId != null)
+                {
+                    
+                    if (UserManageClient.Current.UpdateUserByID(SelectUser) == "1")
+                    {
+                        MessageBox.Show("用户信息修改成功！");
+                    }
+                }
+                else
+                {
+                    SelectUser.UserId = Guid.NewGuid().ToString();
+                    SelectUser.State = "1";
+                    SelectUser.Sex = SelectUser.Sex ?? "男";
+                    SelectUser.LinkTel = SelectUser.LinkTel ?? "";
+                    SelectUser.Email = SelectUser.Email ?? "";
+                    SelectUser.Describe = SelectUser.Describe ?? "";
+                    if (UserManageClient.Current.InsertUser(SelectUser) == "1")
+                    {
+                        MessageBox.Show("用户信息提交成功！");
+                    }
+                }
+                if (this.Owner !=null )
+                {
+                    this.Owner.Close();
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                throw new Exception();
+            }
         }
         private void DutyAllocateExecute()
         {
@@ -166,6 +210,7 @@ namespace FinancialRegulation.UserCotrol
             dl.VM.UserID = SelectUser.UserId;
             dl.VM.InitialData();
             dl.ShowDialog();
+            LoadOwnDutyList();
         }
         #endregion 命令方法
         public  void LoadOwnDutyList()

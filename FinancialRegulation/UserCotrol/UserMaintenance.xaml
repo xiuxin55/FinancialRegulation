@@ -20,7 +20,7 @@
         <ToolBar  Grid.Row="0">
             <Button Margin="-10,0,0,1" Command="{Binding AddCommand}"  Content="新建" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1"  />
             <Button Margin="6,0,0,0"  Command="{Binding ModifyCommand}"  Content="编辑" Style="{StaticResource ButtonCommand}" BorderBrush="#FFB1B1B1"  />
-            <Button Margin="6,0,0,0"   Command="{Binding AuthorizeCommand}" BorderBrush="#FFB1B1B1"   Style="{StaticResource ButtonCommand}" >授权</Button>
+            <!--<Button Margin="6,0,0,0"   Command="{Binding AuthorizeCommand}" BorderBrush="#FFB1B1B1"   Style="{StaticResource ButtonCommand}" >授权</Button>-->
             <Button Margin="6,0,0,0"  Command="{Binding DeleteCommand}"  BorderBrush="#FFB1B1B1"  Content="删除"  Style="{StaticResource ButtonCommand}"  HorizontalContentAlignment="Center" HorizontalAlignment="Left" />
             <Button Margin="6,0,0,0"  Command="{Binding LockCommand}"  BorderBrush="#FFB1B1B1"  Content="锁定/解锁"  Style="{StaticResource ButtonCommand}"  HorizontalContentAlignment="Center" HorizontalAlignment="Left" />
             <TextBlock Width="auto" Margin="15,0" Height="15" Text="条件" VerticalAlignment="Center"/>
@@ -32,7 +32,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="编号" Width="30*" Binding="{Binding UserCode}" IsReadOnly="True" />
                 <DataGridTextColumn Header="用户姓名" Width="40*" Binding="{Binding UserName}" IsReadOnly="True" />
-                <DataGridTextColumn Header="所属网点" Width="60*" Binding="{Binding Ssq}" IsReadOnly="True" />
+                <DataGridTextColumn Header="所属网点" Width="60*" Binding="{Binding UnitID}" IsReadOnly="True" />
                 <DataGridTextColumn Header="性别" Width="30*" Binding="{Binding Sex}" IsReadOnly="True" />
                 <DataGridTextColumn Header="联系电话" Width="60*" Binding="{Binding LinkTel}" IsReadOnly="True" />
                 <DataGridTextColumn Header="邮箱" Width="60*" Binding="{Binding Email}" IsReadOnly="True" />

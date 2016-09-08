@@ -74,6 +74,16 @@ namespace FinancialRegulation.UserCotrol
         {
            if(SelectDuty!=null)
             {
+               if(string.IsNullOrWhiteSpace(SelectDuty.DutyCode))
+               {
+                   MessageBox.Show("编号不能为空");
+                   return;
+               }
+               if (string.IsNullOrWhiteSpace(SelectDuty.DutyName))
+               {
+                   MessageBox.Show("名称不能为空");
+                   return;
+               }
                 FundsRegulatoryClient.DutyManageSrv.Duty dt = new FundsRegulatoryClient.DutyManageSrv.Duty();
                 dt.DutyID = SelectDuty.DutyId?? Guid.NewGuid().ToString();
                 dt.DutyCode = SelectDuty.DutyCode;
@@ -90,6 +100,7 @@ namespace FinancialRegulation.UserCotrol
                     }
                     else
                     {
+                        dt.Describe = dt.Describe ?? "";
                         if (DutyManageClient.Current.InsertDuty(dt) == "1")
                         {
                             MessageBox.Show("操作成功");

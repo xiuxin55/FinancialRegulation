@@ -34,3 +34,12 @@ E:\个人\GitHub_资金监管\FinancialRegulation\SqlMaps\bin\Debug\IBatisNet.Da
 E:\个人\GitHub_资金监管\FinancialRegulation\SqlMaps\obj\Debug\SqlMaps.csprojResolveAssemblyReference.cache
 E:\个人\GitHub_资金监管\FinancialRegulation\SqlMaps\obj\Debug\SqlMaps.dll
 E:\个人\GitHub_资金监管\FinancialRegulation\SqlMaps\obj\Debug\SqlMaps.pdb
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\SqlMaps\bin\Debug\SqlMaps.dll.config
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\SqlMaps\bin\Debug\SqlMaps.dll
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\SqlMaps\bin\Debug\SqlMaps.pdb
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\SqlMaps\bin\Debug\IBatisNet.Common.dll
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\SqlMaps\bin\Debug\IBatisNet.Common.Logging.Log4Net.dll
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\SqlMaps\bin\Debug\IBatisNet.DataMapper.dll
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\SqlMaps\obj\Debug\SqlMaps.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\SqlMaps\obj\Debug\SqlMaps.dll
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\SqlMaps\obj\Debug\SqlMaps.pdb

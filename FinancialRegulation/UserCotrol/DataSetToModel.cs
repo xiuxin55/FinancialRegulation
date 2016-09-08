@@ -80,7 +80,8 @@ namespace FinancialRegulation.UserCotrol
                     ui.UserId = item["UserId"].ToString();
                     ui.UserCode = item["UserCode"].ToString();
                     ui.UserName = item["UserName"].ToString();
-                    ui.Ssq = item["SSQName"].ToString();
+                    ui.Ssq = item["SSQ"].ToString();
+                    ui.UnitID = item["SSQName"].ToString();
                     ui.Sex = item["Sex"].ToString();
                     ui.LinkTel = item["LinkTel"].ToString();
                     ui.Email = item["Email"].ToString();

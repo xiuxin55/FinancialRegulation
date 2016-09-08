@@ -25,6 +25,8 @@ namespace FinancialRegulation.UserCotrol
         {
             InitializeComponent();
             VM = new UserInfoVM();
+            VM.OnePassword = this.pwdBox;
+            VM.RepeatePassword = this.pwdRepeatBox;
             VM.Owner = this;
 
             this.DataContext = VM;

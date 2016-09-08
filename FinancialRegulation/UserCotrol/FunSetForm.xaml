@@ -43,10 +43,10 @@
             </winform:WindowsFormsHost>
             </GroupBox>
             <StackPanel Grid.Column="2"  Orientation="Vertical">
-                <Button  Margin="0,100,0,0" Style="{StaticResource ButtonCommand}" Content=">"  Width="80" Height="30" x:Name="btnAdd" Click="btnAdd_Click"/>
-                <Button Margin="0,60,0,0" Style="{StaticResource ButtonCommand}" Content=">>" Width="80" Height="30"  x:Name="btnAddAll" Click="btnAddAll_Click" />
-                <Button  Margin="0,60,0,0" Style="{StaticResource ButtonCommand}" Content="&lt;"  Width="80" Height="30" x:Name="btnDelete" Click="btnDelete_Click"/>
-                <Button  Margin="0,60,0,0" Style="{StaticResource ButtonCommand}" Content="&lt;&lt;"  Width="80" Height="30" x:Name="btnDeleteAll" Click="btnDeleteAll_Click"/>
+                <Button  Margin="0,100,0,0" Style="{StaticResource ButtonCommand}" Content=">"  Width="70" Height="30" x:Name="btnAdd" Click="btnAdd_Click"/>
+                <Button Margin="0,60,0,0" Style="{StaticResource ButtonCommand}" Content=">>" Width="70" Height="30"  x:Name="btnAddAll" Click="btnAddAll_Click" />
+                <Button  Margin="0,60,0,0" Style="{StaticResource ButtonCommand}" Content="&lt;"  Width="70" Height="30" x:Name="btnDelete" Click="btnDelete_Click"/>
+                <Button  Margin="0,60,0,0" Style="{StaticResource ButtonCommand}" Content="&lt;&lt;"  Width="70" Height="30" x:Name="btnDeleteAll" Click="btnDeleteAll_Click"/>
             </StackPanel>
             <GroupBox Header="已授权功能"  Grid.Column="3" >
             <winform:WindowsFormsHost  Background="White">

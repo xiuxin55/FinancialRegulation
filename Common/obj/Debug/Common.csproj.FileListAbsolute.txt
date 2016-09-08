@@ -26,3 +26,9 @@ E:\个人\GitHub_资金监管\FinancialRegulation\Common\bin\Debug\Common.pdb
 E:\个人\GitHub_资金监管\FinancialRegulation\Common\obj\Debug\Common.dll
 E:\个人\GitHub_资金监管\FinancialRegulation\Common\obj\Debug\Common.pdb
 E:\个人\GitHub_资金监管\FinancialRegulation\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Common\bin\Debug\UpdateList.xml
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Common\obj\Debug\Common.pdb

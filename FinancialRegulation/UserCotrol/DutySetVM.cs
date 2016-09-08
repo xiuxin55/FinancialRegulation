@@ -138,19 +138,24 @@ namespace FinancialRegulation.UserCotrol
         private  void AddExecute(object obj)
         {
 
-            IList<DutyModel> SelectedItems = obj as IList<DutyModel>;
+            System.Collections.IList SelectedItems = obj as System.Collections.IList;
             if (SelectedItems!= null)
             {
                 List<UserDuty> lsUserDuty = new List<UserDuty>();
                 foreach (var item in SelectedItems)
                 {
+                    DutyModel dm = (DutyModel)item;
                     UserDuty ud = new UserDuty();
                     ud.UserID = UserID;
-                    ud.DutyID = item.DutyId;
+                    ud.DutyID = dm.DutyId;
                     lsUserDuty.Add(ud);
                 }
+
                 FundsRegulatoryClient.UserDutyManagerSrv.UserDuty[] userdutys = lsUserDuty.ToArray();
-                LoadData();
+                if (UserDutyManagerClient.Current.LicendToUser(userdutys) == "1")
+                {
+                    InitialData();
+                }
             }
         }
 
@@ -165,21 +170,25 @@ namespace FinancialRegulation.UserCotrol
                 lsUserDuty.Add(ud);
             }
             FundsRegulatoryClient.UserDutyManagerSrv.UserDuty[] userdutys = lsUserDuty.ToArray();
-            LoadData();
+            if (UserDutyManagerClient.Current.LicendToUser(userdutys) == "1")
+            {
+                InitialData();
+            }
         }
         private void RemoveExecute(object obj)
         {
-            IList<DutyModel> SelectedItems = obj as IList<DutyModel>;
+            System.Collections.IList SelectedItems = obj as System.Collections.IList;
             if (SelectedItems != null)
             {
                 List<string> lsUserDuty = new List<string>();
                 foreach (var item in SelectedItems)
                 {
-                    lsUserDuty.Add(item.UserDutyID);
+                    DutyModel dm = (DutyModel)item;
+                    lsUserDuty.Add(dm.UserDutyID);
                 }
                 if (UserDutyManagerClient.Current.RemoveDuty(lsUserDuty.ToArray()) == "1")
                 {
-                    LoadData();
+                    InitialData();
                 }
             }
         }
@@ -193,9 +202,10 @@ namespace FinancialRegulation.UserCotrol
             }
             if (UserDutyManagerClient.Current.RemoveDuty(lsUserDuty.ToArray()) == "1")
             {
-                LoadData();
+                InitialData();
             }
         }
+       
         #endregion 命令方法
 
 

@@ -20,7 +20,6 @@ namespace FinancialRegulation.UserCotrol
     public class UserMaintenanceVM : BaseManageVM<FundsRegulatoryClient.UserManageSrv.UserInfo>
     {
 
-
         #region 构造加载
 
         /// <summary>
@@ -159,6 +158,7 @@ namespace FinancialRegulation.UserCotrol
             di.VM.SelectUser = SelectUser;
             di.VM.LoadOwnDutyList();
             di.ShowDialog();
+            LoadData();
             
         }
         public override void DeleteExecute()
@@ -198,6 +198,7 @@ namespace FinancialRegulation.UserCotrol
             {
                 FunSetForm fsf = new FunSetForm(SelectUser.UserId);
                 fsf.ShowDialog();
+               
             }
         }
         /// <summary>
@@ -212,9 +213,7 @@ namespace FinancialRegulation.UserCotrol
             {
                 
                 MessageBox.Show("操作成功！");
-                SelectUser.State = "正常";
-                RaisePropertyChanged("SelectUser");
-                RaisePropertyChanged("UserMaintainList");
+                LoadData();
             }
         }
         #endregion 命令方法
