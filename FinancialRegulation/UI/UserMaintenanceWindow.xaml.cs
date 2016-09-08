@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace FinancialRegulation.UI
     /// <summary>
     /// UserMaintenanceWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class UserMaintenanceWindow : BaseWindow
+    public partial class UserMaintenanceWindow : MetroContentControl
     {
         //private readonly HSIS.UserCotrol.UserMaintenance um = new UserCotrol.UserMaintenance();
         public UserMaintenanceWindow()

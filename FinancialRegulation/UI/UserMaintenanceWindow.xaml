@@ -1,20 +1,13 @@
-﻿<local:BaseWindow x:Class="FinancialRegulation.UI.UserMaintenanceWindow"
+﻿<Controls:MetroContentControl x:Class="FinancialRegulation.UI.UserMaintenanceWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:FinancialRegulation"
         xmlns:uc="clr-namespace:FinancialRegulation.UserCotrol"
-        Title="用户管理" Height="300" Width="300" Background="{DynamicResource MyBrush}" Icon="/FinancialRegulation;component/Images/logo.png">
-    <local:BaseWindow.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="../Template/ControlStyle.xaml"></ResourceDictionary>
-                <ResourceDictionary Source="../Template/ColorStyle.xaml"></ResourceDictionary>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </local:BaseWindow.Resources>
+                                xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                   xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+          >
+   
     <Grid>
-        <WindowsFormsHost Name="uwfh" Background="Transparent">
-            <uc:UserMaintenance BackColor="Transparent"/>
-        </WindowsFormsHost>
+        <uc:UserMaintenance />
     </Grid>
-</local:BaseWindow>
+</Controls:MetroContentControl>

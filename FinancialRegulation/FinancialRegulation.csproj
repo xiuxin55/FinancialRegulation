@@ -164,10 +164,12 @@
       <DependentUpon>UnKnownInfoCheck.xaml</DependentUpon>
     </Compile>
     <Compile Include="Page\UnknowBill\UnKnownInfoCheckVM.cs" />
+    <Compile Include="Tools\SexConvert.cs" />
     <Compile Include="Tools\ButtonEnableConvert.cs" />
     <Compile Include="Tools\DateTimeConvert.cs" />
     <Compile Include="Tools\LinkSateConvert.cs" />
     <Compile Include="Tools\ZQLBConverter.cs" />
+    <Compile Include="UserCotrol\UserMaintenanceVM.cs" />
     <Compile Include="ViewModel\Check\CheckHelp.cs" />
     <Compile Include="Page\Account&amp;Point\OpenAccountAddToEdit.xaml.cs">
       <DependentUpon>OpenAccountAddToEdit.xaml</DependentUpon>
@@ -234,23 +236,25 @@
     <Compile Include="ViewModel\BaseManageVM.cs" />
     <Compile Include="ViewModel\BaseVM.cs" />
     <Compile Include="ViewModel\InterFace\ISearch.cs" />
-    <Compile Include="WPFDutyUser\DutyInfo.xaml.cs">
+    <Compile Include="UserCotrol\DutyInfo.xaml.cs">
       <DependentUpon>DutyInfo.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WPFDutyUser\DutyMaintain.xaml.cs">
+    <Compile Include="UserCotrol\DutyMaintain.xaml.cs">
       <DependentUpon>DutyMaintain.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WPFDutyUser\DutySet.xaml.cs">
+    <Compile Include="UserCotrol\DutyInfoVM.cs" />
+    <Compile Include="UserCotrol\DutyModel.cs" />
+    <Compile Include="UserCotrol\DutySet.xaml.cs">
       <DependentUpon>DutySet.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WPFDutyUser\DutyMaintainVM.cs" />
-    <Compile Include="WPFDutyUser\FunSetForm.xaml.cs">
+    <Compile Include="UserCotrol\DutyMaintainVM.cs" />
+    <Compile Include="UserCotrol\FunSetForm.xaml.cs">
       <DependentUpon>FunSetForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WPFDutyUser\UserInfo.xaml.cs">
+    <Compile Include="UserCotrol\UserInfo.xaml.cs">
       <DependentUpon>UserInfo.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WPFDutyUser\UserMaintenance.xaml.cs">
+    <Compile Include="UserCotrol\UserMaintenance.xaml.cs">
       <DependentUpon>UserMaintenance.xaml</DependentUpon>
     </Compile>
     <Page Include="App.xaml">
@@ -268,43 +272,43 @@
     <Compile Include="UI\UserMaintenanceWindow.xaml.cs">
       <DependentUpon>UserMaintenanceWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserCotrol\DutyInfo.cs">
+    <Compile Include="UserCotrol2\DutyInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserCotrol\DutyInfo.designer.cs">
+    <Compile Include="UserCotrol2\DutyInfo.designer.cs">
       <DependentUpon>DutyInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserCotrol\DutyMaintain.cs">
+    <Compile Include="UserCotrol2\DutyMaintain.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserCotrol\DutyMaintain.designer.cs">
+    <Compile Include="UserCotrol2\DutyMaintain.designer.cs">
       <DependentUpon>DutyMaintain.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserCotrol\DutySet.cs">
+    <Compile Include="UserCotrol2\DutySet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserCotrol\DutySet.designer.cs">
+    <Compile Include="UserCotrol2\DutySet.designer.cs">
       <DependentUpon>DutySet.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserCotrol\FunSetForm.cs">
+    <Compile Include="UserCotrol2\FunSetForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserCotrol\FunSetForm.designer.cs">
+    <Compile Include="UserCotrol2\FunSetForm.designer.cs">
       <DependentUpon>FunSetForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserCotrol\MouseWheelTree.cs">
+    <Compile Include="UserCotrol2\MouseWheelTree.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="UserCotrol\UserInfo.cs">
+    <Compile Include="UserCotrol2\UserInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserCotrol\UserInfo.designer.cs">
+    <Compile Include="UserCotrol2\UserInfo.designer.cs">
       <DependentUpon>UserInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserCotrol\UserMaintenance.cs">
+    <Compile Include="UserCotrol2\UserMaintenance.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserCotrol\UserMaintenance.designer.cs">
+    <Compile Include="UserCotrol2\UserMaintenance.designer.cs">
       <DependentUpon>UserMaintenance.cs</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
@@ -452,27 +456,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="WPFDutyUser\DutyInfo.xaml">
+    <Page Include="UserCotrol\DutyInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WPFDutyUser\DutyMaintain.xaml">
+    <Page Include="UserCotrol\DutyMaintain.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WPFDutyUser\DutySet.xaml">
+    <Page Include="UserCotrol\DutySet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WPFDutyUser\FunSetForm.xaml">
+    <Page Include="UserCotrol\FunSetForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WPFDutyUser\UserInfo.xaml">
+    <Page Include="UserCotrol\UserInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WPFDutyUser\UserMaintenance.xaml">
+    <Page Include="UserCotrol\UserMaintenance.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -496,22 +500,22 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserCotrol\DutyInfo.resx">
+    <EmbeddedResource Include="UserCotrol2\DutyInfo.resx">
       <DependentUpon>DutyInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserCotrol\DutyMaintain.resx">
+    <EmbeddedResource Include="UserCotrol2\DutyMaintain.resx">
       <DependentUpon>DutyMaintain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserCotrol\DutySet.resx">
+    <EmbeddedResource Include="UserCotrol2\DutySet.resx">
       <DependentUpon>DutySet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserCotrol\FunSetForm.resx">
+    <EmbeddedResource Include="UserCotrol2\FunSetForm.resx">
       <DependentUpon>FunSetForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserCotrol\UserInfo.resx">
+    <EmbeddedResource Include="UserCotrol2\UserInfo.resx">
       <DependentUpon>UserInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserCotrol\UserMaintenance.resx">
+    <EmbeddedResource Include="UserCotrol2\UserMaintenance.resx">
       <DependentUpon>UserMaintenance.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
