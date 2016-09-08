@@ -74,23 +74,8 @@ namespace FinancialRegulation.UserCotrol
         }
         private List<DutyModel> GetData()
         {
-            List<DutyModel> temp = new List<DutyModel>();
             DataSet dsAllDuty = DutyManageClient.Current.GetAllDuty();
-            if (dsAllDuty != null)
-            {
-                DataTable dt = dsAllDuty.Tables[0];
-                foreach (DataRow item in dt.Rows)
-                {
-                    DutyModel dm = new DutyModel();
-                    dm.DutyId = item["DutyId"].ToString();
-                    dm.DutyCode = item["DutyCode"].ToString();
-                    dm.DutyName = item["DutyName"].ToString();
-                    dm.DutyDescribe = item["Describe"].ToString();
-                    temp.Add(dm);
-
-                }
-            }
-            return temp;
+            return DataSetToModel.DutyToModel(dsAllDuty,0);
         }
         #endregion 构造加载
 

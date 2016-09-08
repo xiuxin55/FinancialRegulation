@@ -169,6 +169,9 @@
     <Compile Include="Tools\DateTimeConvert.cs" />
     <Compile Include="Tools\LinkSateConvert.cs" />
     <Compile Include="Tools\ZQLBConverter.cs" />
+    <Compile Include="UserCotrol\DataSetToModel.cs" />
+    <Compile Include="UserCotrol\DutySetVM.cs" />
+    <Compile Include="UserCotrol\UserInfoVM.cs" />
     <Compile Include="UserCotrol\UserMaintenanceVM.cs" />
     <Compile Include="ViewModel\Check\CheckHelp.cs" />
     <Compile Include="Page\Account&amp;Point\OpenAccountAddToEdit.xaml.cs">

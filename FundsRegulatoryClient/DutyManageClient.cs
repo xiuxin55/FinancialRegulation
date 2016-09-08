@@ -46,6 +46,8 @@ namespace FundsRegulatoryClient
         {
             return dutymanagesrv.GetAllDuty();
         }
+
+
         /// <summary>
         /// 根据编号删除指定职责
         /// </summary>

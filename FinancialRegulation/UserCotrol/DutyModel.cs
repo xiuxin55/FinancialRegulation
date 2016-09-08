@@ -12,6 +12,7 @@ namespace FinancialRegulation.UserCotrol
         public string DutyCode { get; set; }
         public string DutyName { get; set; }
         public string DutyDescribe { get; set; }
+        public string UserDutyID { get; set; }
 
         public DutyModel Clone()
         {

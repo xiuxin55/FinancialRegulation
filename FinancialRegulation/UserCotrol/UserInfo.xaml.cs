@@ -24,6 +24,12 @@ namespace FinancialRegulation.UserCotrol
         public UserInfo()
         {
             InitializeComponent();
+            VM = new UserInfoVM();
+            VM.Owner = this;
+
+            this.DataContext = VM;
         }
+       
+        public UserInfoVM VM { get; set; }
     }
 }

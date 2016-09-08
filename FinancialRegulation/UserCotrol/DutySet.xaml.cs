@@ -1,5 +1,9 @@
-﻿using System;
+﻿using FundsRegulatoryClient;
+using MahApps.Metro.Controls;
+using Microsoft.Office.Interop.Excel;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,11 +22,15 @@ namespace FinancialRegulation.UserCotrol
     /// <summary>
     /// DutySet.xaml 的交互逻辑
     /// </summary>
-    public partial class DutySet : UserControl
+    public partial class DutySet : MetroWindow
     {
         public DutySet()
         {
             InitializeComponent();
+            VM = new DutySetVM();
+            VM.Owner = this;
+            this.DataContext = VM;
         }
+        public DutySetVM VM { get; set; }
     }
 }

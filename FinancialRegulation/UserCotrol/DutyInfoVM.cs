@@ -47,7 +47,7 @@ namespace FinancialRegulation.UserCotrol
             set
             {
                 _SelectDuty = value;
-                RaisePropertyChanged("_SelectDuty");
+                RaisePropertyChanged("SelectDuty");
             }
         }
 

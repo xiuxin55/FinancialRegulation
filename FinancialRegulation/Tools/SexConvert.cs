@@ -9,19 +9,24 @@ namespace FinancialRegulation.Tools
     {
        public  object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            if (value ==null || value.ToString()=="男")
+           if(value == null) { return 0; }
+            string str = value.ToString();
+            if (str=="男")
             {
-                return true;
+                return 0;
             }
-            else
-            {
-                return false;
-            }
+            return 1;
         }
 
-       public object  ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            throw new NotImplementedException();
+            if (value == null) { return null; }
+            int index = (int)value;
+            if (index == 0)
+            {
+                return "男";
+            }
+            return "女";
         }
     }
 }

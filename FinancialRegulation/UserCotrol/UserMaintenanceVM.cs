@@ -74,28 +74,8 @@ namespace FinancialRegulation.UserCotrol
         }
         private List<FundsRegulatoryClient.UserManageSrv.UserInfo> GetData()
         {
-            List<FundsRegulatoryClient.UserManageSrv.UserInfo> temp = new List<FundsRegulatoryClient.UserManageSrv.UserInfo>();
             DataSet dsAllUser = UserManageClient.Current.GetAllUser();
-            if (dsAllUser != null)
-            {
-                DataTable dt = dsAllUser.Tables[0];
-                foreach (DataRow item in dt.Rows)
-                {
-                    FundsRegulatoryClient.UserManageSrv.UserInfo ui = new FundsRegulatoryClient.UserManageSrv.UserInfo();
-                    ui.UserId = item["UserId"].ToString();
-                    ui.UserCode = item["UserCode"].ToString();
-                    ui.UserName = item["UserName"].ToString();
-                    ui.Ssq = item["SSQName"].ToString();
-                    ui.Sex= item["Sex"].ToString();
-                    ui.LinkTel= item["LinkTel"].ToString();
-                    ui.Email = item["Email"].ToString();
-                    ui.State = item["UserState"].ToString();
-                    ui.Describe = item["Describe"].ToString();
-                    temp.Add(ui);
-
-                }
-            }
-            return temp;
+            return DataSetToModel.UserInfoToModel(dsAllUser,0);
         }
         #endregion 构造加载
 
@@ -170,14 +150,15 @@ namespace FinancialRegulation.UserCotrol
         public override void AddExecute()
         {
             UserInfo di = new UserInfo();
-            //di.ShowDialog();
+            di.ShowDialog();
             LoadData();
         }
         public override void ModifyExecute()
         {
             UserInfo di = new UserInfo();
-            //di.VM.SelectUser = SelectUser;
-            //di.ShowDialog();
+            di.VM.SelectUser = SelectUser;
+            di.VM.LoadOwnDutyList();
+            di.ShowDialog();
             
         }
         public override void DeleteExecute()
