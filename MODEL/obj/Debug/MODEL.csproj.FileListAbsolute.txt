@@ -12,10 +12,6 @@ D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\MODEL\bin\Debug\MODE
 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\MODEL\obj\Debug\ResolveAssemblyReference.cache
 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\MODEL\obj\Debug\MODEL.dll
 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\MODEL\obj\Debug\MODEL.pdb
-C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MODEL\bin\Debug\MODEL.dll
-C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MODEL\bin\Debug\MODEL.pdb
-C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MODEL\obj\Debug\MODEL.dll
-C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MODEL\obj\Debug\MODEL.pdb
 E:\个人\GitHub_资金监管\FinancialRegulation\MODEL\bin\Debug\MODEL.dll
 E:\个人\GitHub_资金监管\FinancialRegulation\MODEL\bin\Debug\MODEL.pdb
 E:\个人\GitHub_资金监管\FinancialRegulation\MODEL\obj\Debug\MODEL.csprojResolveAssemblyReference.cache

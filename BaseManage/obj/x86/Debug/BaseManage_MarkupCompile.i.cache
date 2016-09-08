@@ -4,7 +4,7 @@
 library
 C#
 .cs
-E:\个人\GitHub_资金监管\FinancialRegulation\BaseManage\obj\x86\Debug\
+C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseManage\obj\x86\Debug\
 BaseManage
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 3-433203630
 
-15-141147990
-2156875026
+151890906511
+21-93321368
 App.xaml;MenuManageWindow.xaml;UC_Style.xaml;
 
-True
+False
 

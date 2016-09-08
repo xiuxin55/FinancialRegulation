@@ -34,16 +34,6 @@ D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\Message\bin\Debug\Fi
 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\Message\obj\Debug\ResolveAssemblyReference.cache
 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\Message\obj\Debug\BankMessage.dll
 D:\Users\孙立翔\Desktop\资金监管\FinancialRegulation\Message\obj\Debug\BankMessage.pdb
-C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\bin\Debug\UpdateList.xml
-C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\bin\Debug\BankMessage.dll
-C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\bin\Debug\BankMessage.pdb
-C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\bin\Debug\Common.dll
-C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\bin\Debug\FinancialRegulationClient.dll
-C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\bin\Debug\FinancialRegulationClient.pdb
-C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\bin\Debug\Common.pdb
-C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\obj\Debug\Message.csprojResolveAssemblyReference.cache
-C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\obj\Debug\BankMessage.dll
-C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\obj\Debug\BankMessage.pdb
 E:\个人\GitHub_资金监管\FinancialRegulation\Message\bin\Debug\UpdateList.xml
 E:\个人\GitHub_资金监管\FinancialRegulation\Message\bin\Debug\BankMessage.dll
 E:\个人\GitHub_资金监管\FinancialRegulation\Message\bin\Debug\BankMessage.pdb
