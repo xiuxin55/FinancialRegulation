@@ -32,7 +32,3 @@ C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulati
 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\ReportManage\obj\Debug\ReportManage.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\ReportManage\obj\Debug\ReportManage.dll
 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\ReportManage\obj\Debug\ReportManage.pdb
-E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\ReportManage\bin\Debug\ReportManage.dll
-E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\ReportManage\bin\Debug\ReportManage.pdb
-E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\ReportManage\obj\Debug\ReportManage.dll
-E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\ReportManage\obj\Debug\ReportManage.pdb
