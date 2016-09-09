@@ -1,6 +1,0 @@
-2014/09/05 14:14:43:163,[5],[]:System.Exception: 所提供的服务器连接超时
-   在 Message.MessageSender.SendMessage(BaseMessageRequest bmr) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\Message\MessageSender.cs:行号 67
-   在 FinancialRegulation.ViewModel.BaseVM`1.SendMessage[R](BaseMessageRequest request) 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseVM.cs:行号 31
-   在 FinancialRegulation.ViewModel.OpenAccountEditVM.GetResponse() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Account&Point\OpenAccountEditVM.cs:行号 96
-   在 FinancialRegulation.ViewModel.OpenAccountEditVM.OKExecute() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\Page\Account&Point\OpenAccountEditVM.cs:行号 45
-   在 FinancialRegulation.ViewModel.BaseEditVM`1.OKExecuteHost() 位置 D:\Users\孙立翔\Desktop\项目\程序\FinancialRegulation\FinancialRegulation\ViewModel\BaseEditVM.cs:行号 72
