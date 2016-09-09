@@ -59,3 +59,13 @@ C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulati
 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FundsRegulatoryClient\obj\Debug\FundsRegulatoryClient.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FundsRegulatoryClient\obj\Debug\FinancialRegulationClient.dll
 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\FundsRegulatoryClient\obj\Debug\FinancialRegulationClient.pdb
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\FundsRegulatoryClient\bin\Debug\UpdateList.xml
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\FundsRegulatoryClient\bin\Debug\FinancialRegulationClient.dll.config
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\FundsRegulatoryClient\bin\Debug\FinancialRegulationClient.dll
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\FundsRegulatoryClient\bin\Debug\FinancialRegulationClient.pdb
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\FundsRegulatoryClient\bin\Debug\Common.dll
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\FundsRegulatoryClient\bin\Debug\Microsoft.Practices.Prism.dll
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\FundsRegulatoryClient\bin\Debug\Common.pdb
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\FundsRegulatoryClient\obj\Debug\FundsRegulatoryClient.csprojResolveAssemblyReference.cache
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\FundsRegulatoryClient\obj\Debug\FinancialRegulationClient.dll
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\FundsRegulatoryClient\obj\Debug\FinancialRegulationClient.pdb
