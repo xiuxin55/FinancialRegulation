@@ -134,7 +134,6 @@ C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulati
 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseManage\obj\x86\Debug\BaseManage.csproj.GenerateResource.Cache
 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseManage\obj\x86\Debug\BaseManage.dll
 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\BaseManage\obj\x86\Debug\BaseManage.pdb
-E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\BaseManage\bin\Debug\UpdateList.xml
 E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\BaseManage\bin\Debug\BaseManage.dll
 E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\BaseManage\bin\Debug\BaseManage.pdb
 E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\BaseManage\bin\Debug\AvalonDock.dll

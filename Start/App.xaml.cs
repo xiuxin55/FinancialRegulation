@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Linq;
+using System.Reflection;
 using System.Windows;
+
 using System.Windows.Threading;
 
 namespace Start
@@ -20,7 +22,7 @@ namespace Start
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            //  Form frmAutoUpdate = (Form)Assembly.LoadFrom("AutoUpdate.dll").CreateInstance("AutoUpdate.FrmUpdate");
+            System.Windows.Forms.Form frmAutoUpdate = (System.Windows.Forms.Form)Assembly.LoadFrom("AutoUpdate.dll").CreateInstance("AutoUpdate.FrmUpdate");
             MainFrame.LoginWindow lw = new MainFrame.LoginWindow();
 
             if (lw.ShowDialog() == true)

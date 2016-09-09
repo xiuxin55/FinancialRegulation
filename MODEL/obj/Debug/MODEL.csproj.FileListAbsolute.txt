@@ -24,6 +24,5 @@ C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulati
 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\MODEL\obj\Debug\MODEL.pdb
 E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\MODEL\bin\Debug\MODEL.dll
 E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\MODEL\bin\Debug\MODEL.pdb
-E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\MODEL\obj\Debug\MODEL.csprojResolveAssemblyReference.cache
 E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\MODEL\obj\Debug\MODEL.dll
 E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\MODEL\obj\Debug\MODEL.pdb
