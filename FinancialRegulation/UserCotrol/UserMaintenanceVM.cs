@@ -186,10 +186,10 @@ namespace FinancialRegulation.UserCotrol
             CacheUserList = GetData();
             foreach (var item in CacheUserList)
             {
-                //if(item.UserCode.Contains(Condition) || item.UserName.Contains(Condition) || item.UserDescribe.Contains(Condition))
-                //{
-                //    UserMaintainList.Add(item.Clone());
-                //}
+                if (item.UserCode.Contains(Condition) || item.UserName.Contains(Condition))
+                {
+                    UserMaintainList.Add(item);
+                }
             }
         }
         private void AuthorizeExecute()

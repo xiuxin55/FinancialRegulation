@@ -54,3 +54,13 @@ C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulati
 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\obj\Debug\Message.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\obj\Debug\BankMessage.dll
 C:\Users\Administrator\Desktop\资金监管程序\资金监管\FinancialRegulation\Message\obj\Debug\BankMessage.pdb
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\Message\bin\Debug\UpdateList.xml
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\Message\bin\Debug\BankMessage.dll
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\Message\bin\Debug\BankMessage.pdb
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\Message\bin\Debug\Common.dll
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\Message\bin\Debug\FinancialRegulationClient.dll
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\Message\bin\Debug\FinancialRegulationClient.pdb
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\Message\bin\Debug\Common.pdb
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\Message\obj\Debug\Message.csprojResolveAssemblyReference.cache
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\Message\obj\Debug\BankMessage.dll
+E:\个人\GitHub_资金监管\FinancialRegulation\FinancialRegulation\Message\obj\Debug\BankMessage.pdb

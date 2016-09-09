@@ -25,7 +25,7 @@
             <Button Margin="6,0,0,0"  Command="{Binding LockCommand}"  BorderBrush="#FFB1B1B1"  Content="锁定/解锁"  Style="{StaticResource ButtonCommand}"  HorizontalContentAlignment="Center" HorizontalAlignment="Left" />
             <TextBlock Width="auto" Margin="15,0" Height="15" Text="条件" VerticalAlignment="Center"/>
             <TextBox Width="150" Text="{Binding Condition}" ></TextBox>
-            <Button Margin="6,0,0,0"  Command="{Binding SearchCommand}"  x:Name="Search"   Style="{StaticResource ButtonCommand}"  >查询</Button>
+            <Button Margin="6,0,0,0"  Command="{Binding SearchCommand}"  x:Name="Search"   Style="{StaticResource ButtonCommand}" ToolTip="仅支持编号和用户名查询"  >查询</Button>
 
         </ToolBar>
         <DataGrid  Background="White" ItemsSource="{Binding Path=UserMaintainList}" SelectedItem="{Binding SelectUser}" Style="{StaticResource DataGridStyle}" Grid.Row="1">
