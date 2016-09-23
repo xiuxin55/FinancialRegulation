@@ -123,6 +123,7 @@
   <ItemGroup>
     <Content Include="ClientConfig.xml">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Web References\SysConfigSrv\SysConfigService.disco" />
     <None Include="Web References\LoginSrv\LoginSrv.disco" />
